@@ -424,7 +424,7 @@ nvc0_miptree_transfer_map(struct pipe_context *pctx,
       else
          offset += nvc0_mt_zslice_offset(mt, level, box->z);
       *ptransfer = &tx->base;
-      return mt->base.bo->map + mt->base.offset + offset;
+      return ((uint8_t*)(mt->base.bo->map)) + mt->base.offset + offset;
    }
 
    tx->base.stride = tx->nblocksx * util_format_get_blocksize(res->format);

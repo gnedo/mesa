@@ -176,7 +176,7 @@ nouveau_screen_init(struct nouveau_screen *screen, struct nouveau_device *dev)
 {
    struct pipe_screen *pscreen = &screen->base;
    struct nv04_fifo nv04_data = { .vram = 0xbeef0201, .gart = 0xbeef0202 };
-   struct nvc0_fifo nvc0_data = { };
+   struct nvc0_fifo nvc0_data = {0};
    uint64_t time;
    int size, ret;
    void *data;

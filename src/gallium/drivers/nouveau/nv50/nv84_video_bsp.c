@@ -191,13 +191,13 @@ nv84_decoder_bsp(struct nv84_decoder *dec,
    memcpy(dec->bitstream->map, &params, sizeof(params));
    for (i = 0; i < num_buffers; i++) {
       assert(total_bytes + num_bytes[i] < dec->bitstream->size / 2 - 0x700);
-      memcpy(dec->bitstream->map + 0x700 + total_bytes, data[i], num_bytes[i]);
+      memcpy(((uint8_t*)(dec->bitstream->map)) + 0x700 + total_bytes, data[i], num_bytes[i]);
       total_bytes += num_bytes[i];
    }
-   memcpy(dec->bitstream->map + 0x700 + total_bytes, end, sizeof(end));
+   memcpy(((uint8_t*)(dec->bitstream->map)) + 0x700 + total_bytes, end, sizeof(end));
    total_bytes += sizeof(end);
    more_params[1] = total_bytes;
-   memcpy(dec->bitstream->map + 0x600, more_params, sizeof(more_params));
+   memcpy(((uint8_t*)(dec->bitstream->map)) + 0x600, more_params, sizeof(more_params));
 
    PUSH_SPACE(push, 5 + 21 + 3 + 2 + 4 + 2);
    nouveau_pushbuf_refn(push, bo_refs, ARRAY_SIZE(bo_refs));

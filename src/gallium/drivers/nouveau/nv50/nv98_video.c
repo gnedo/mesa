@@ -42,7 +42,7 @@ nv98_decoder_decode_bitstream(struct pipe_video_codec *decoder,
 
    unsigned vp_caps, is_ref;
    ASSERTED unsigned ret; /* used in debug checks */
-   struct nouveau_vp3_video_buffer *refs[16] = {};
+   struct nouveau_vp3_video_buffer *refs[16] = {0};
 
    desc.base = picture;
 
@@ -64,21 +64,21 @@ nv98_decoder_msvld[] = {
    { G98_MSVLD, -1 },
    { IGT21A_MSVLD, -1 },
    { GT212_MSVLD, -1 },
-   {}
+   {0}
 };
 
 static const struct nouveau_mclass
 nv98_decoder_mspdec[] = {
    { G98_MSPDEC, -1 },
    { GT212_MSPDEC, -1 },
-   {}
+   {0}
 };
 
 static const struct nouveau_mclass
 nv98_decoder_msppp[] = {
    { G98_MSPPP, -1 },
    { GT212_MSPPP, -1 },
-   {}
+   {0}
 };
 
 struct pipe_video_codec *

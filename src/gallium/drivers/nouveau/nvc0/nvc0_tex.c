@@ -242,7 +242,7 @@ gm107_create_texture_view_from_image(struct pipe_context *pipe,
                                      const struct pipe_image_view *view)
 {
    struct nv04_resource *res = nv04_resource(view->resource);
-   struct pipe_sampler_view templ = {};
+   struct pipe_sampler_view templ = {0};
    enum pipe_texture_target target;
    uint32_t flags = 0;
 

@@ -21,7 +21,10 @@
  */
 
 #include "nv50/nv98_video.h"
+
+#ifndef _WIN32
 #include <sys/mman.h>
+#endif /* ndef _WIN32 */
 
 #if NOUVEAU_VP3_DEBUG_FENCE
 static void dump_comm_vp(struct nouveau_vp3_decoder *dec, struct comm *comm, u32 comm_seq,

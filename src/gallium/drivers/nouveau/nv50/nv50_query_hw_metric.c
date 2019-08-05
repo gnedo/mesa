@@ -124,8 +124,8 @@ nv50_hw_metric_get_query_result(struct nv50_context *nv50,
                                 union pipe_query_result *result)
 {
    struct nv50_hw_metric_query *hmq = nv50_hw_metric_query(hq);
-   union pipe_query_result results[4] = {};
-   uint64_t res64[4] = {};
+   union pipe_query_result results[4] = {0};
+   uint64_t res64[4] = {0};
    bool ret = false;
    unsigned i;
 

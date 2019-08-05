@@ -19,6 +19,8 @@
 #include "nv30/nvfx_shader.h"
 #include "nv30/nv30_state.h"
 
+#include "win32/win32_compat.h"
+
 struct nvfx_fpc {
    struct nv30_fragprog *fp;
 

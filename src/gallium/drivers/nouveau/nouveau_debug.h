@@ -15,11 +15,11 @@
 
 #define NOUVEAU_DEBUG 0
 
-#define NOUVEAU_ERR(fmt, args...)                                 \
-   fprintf(stderr, "%s:%d - " fmt, __FUNCTION__, __LINE__, ##args)
+#define NOUVEAU_ERR(fmt, ...)                                 \
+   fprintf(stderr, "%s:%d - " fmt, __FUNCTION__, __LINE__, ##__VA_ARGS__)
 
-#define NOUVEAU_DBG(ch, args...)           \
+#define NOUVEAU_DBG(ch, ...)           \
    if ((NOUVEAU_DEBUG) & (NOUVEAU_DEBUG_##ch))        \
-      debug_printf(args)
+      debug_printf( __VA_ARGS__)
 
 #endif /* __NOUVEAU_DEBUG_H__ */

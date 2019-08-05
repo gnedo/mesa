@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_bb.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_build_util.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_gk110.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_gm107.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_nv50.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_nvc0.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_common.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_nir.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_tgsi.cpp">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4703</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_graph.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_gm107.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_helper.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_nv50.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_nvc0.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_peephole.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_print.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_ra.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_ssa.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_gm107.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nv50.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nvc0.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_util.cpp" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_buffer.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4146</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_fence.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_heap.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_mm.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_video.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video_bsp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video_vp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_clear.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_context.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4700</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4700</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4700</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4700</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_draw.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_format.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_fragprog.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_fragtex.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_miptree.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_push.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_query.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_resource.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_state_validate.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_texture.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_transfer.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_vbo.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_vertprog.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv40_verttex.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nvfx_fragprog.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nvfx_vertprog.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_compute.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_formats.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_miptree.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4146</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_program.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_push.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_metric.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_sm.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_resource.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_shader_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_state_validate.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_surface.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_tex.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_transfer.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_vbo.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video_bsp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video_vp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video_bsp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video_ppp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video_vp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_compute.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_formats.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_miptree.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_program.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_metric.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_sm.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_sw.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_resource.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_shader_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_state_validate.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_surface.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_tex.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_transfer.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_vbo.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_vbo_translate.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video_bsp.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4146</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video_ppp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video_vp.c" />
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_compute.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_build_util.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_driver.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_common.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_graph.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_inlines.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_gm107.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_helper.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_nvc0.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_gm107.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nv50.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nvc0.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_util.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\unordered_set.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_buffer.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_debug.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_fence.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_gldefs.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_heap.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_mm.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_video.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_winsys.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv17_mpeg.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv01_2d.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30-40_3d.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_format.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_resource.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_state.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_transfer.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_vertprog.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_winsys.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv40_vertprog.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nvfx_shader.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv31_mpeg.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\g80_defs.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\g80_texture.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_2d.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_3d.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_3ddefs.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_blit.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_compute.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_program.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_metric.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_sm.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_resource.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_stateobj.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_stateobj_tex.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_transfer.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_winsys.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\gm107_texture.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_3d.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_compute.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_m2mf.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_macros.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_program.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_metric.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_sm.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_sw.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_resource.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_stateobj.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_winsys.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_compute.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_compute.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_p2mf.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv_m2mf.xml.h" />
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv_object.xml.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0B430AC4-2720-4F60-8ED3-7F6D4A1AED8E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libnouveau</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PATH_MAX=MAX_PATH;__volatile__=volatile;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\drivers\nouveau;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\..\mesa-drm\nouveau;$(ProjectDir)..\..\..\..\mesa-drm\include\drm;$(ProjectDir)..\..\..\..\mesa-drm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PATH_MAX=MAX_PATH;__volatile__=volatile;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\drivers\nouveau;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\..\mesa-drm\nouveau;$(ProjectDir)..\..\..\..\mesa-drm\include\drm;$(ProjectDir)..\..\..\..\mesa-drm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PATH_MAX=MAX_PATH;__volatile__=volatile;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\drivers\nouveau;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\..\mesa-drm\nouveau;$(ProjectDir)..\..\..\..\mesa-drm\include\drm;$(ProjectDir)..\..\..\..\mesa-drm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PATH_MAX=MAX_PATH;__volatile__=volatile;NOMINMAX;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\drivers\nouveau;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\..\mesa-drm\nouveau;$(ProjectDir)..\..\..\..\mesa-drm\include\drm;$(ProjectDir)..\..\..\..\mesa-drm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

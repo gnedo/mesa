@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{45984fad-4de9-4226-87e4-582e22b59255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler">
+      <UniqueIdentifier>{829ebc0f-025b-4a2b-bfd6-7c59e407ec83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler\glsl">
+      <UniqueIdentifier>{9022adfb-0f93-47d6-a7d9-b89359a716a4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\compiler\builtin_type_macros.h">
+      <Filter>src\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir_types.h">
+      <Filter>src\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\shader_enums.h">
+      <Filter>src\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\shader_info.h">
+      <Filter>src\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\blob.h">
+      <Filter>src\compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\glsl\ir_expression_operation.h">
+      <Filter>src\compiler\glsl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\glsl_types.h">
+      <Filter>src\compiler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\compiler\glsl_types.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\shader_enums.c">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\blob.c">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir_types.cpp">
+      <Filter>src\compiler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\compiler\meson.build">
+      <Filter>src\compiler</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\compiler\glsl\ir_expression_operation.py">
+      <Filter>src\compiler\glsl</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

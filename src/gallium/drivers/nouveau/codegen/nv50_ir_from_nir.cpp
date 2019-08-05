@@ -39,6 +39,7 @@
 #include <cstring>
 #include <list>
 #include <vector>
+#include <algorithm>
 
 namespace {
 
@@ -3471,9 +3472,9 @@ Converter::run()
       nir_print_shader(nir, stderr);
 
    struct nir_lower_subgroups_options subgroup_options = {
-      .subgroup_size = 32,
-      .ballot_bit_size = 32,
    };
+   subgroup_options.subgroup_size = 32;
+   subgroup_options.ballot_bit_size = 32;
 
    NIR_PASS_V(nir, nir_lower_io, nir_var_all, type_size, (nir_lower_io_options)0);
    NIR_PASS_V(nir, nir_lower_subgroups, &subgroup_options);

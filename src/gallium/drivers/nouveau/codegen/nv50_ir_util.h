@@ -36,46 +36,52 @@
 #include "util/u_inlines.h"
 #include "util/u_memory.h"
 
-#define ERROR(args...) _debug_printf("ERROR: " args)
-#define WARN(args...) _debug_printf("WARNING: " args)
-#define INFO(args...) _debug_printf(args)
+#ifdef _MSC_VER
+#ifdef ERROR
+#undef ERROR
+#endif /* ERROR */
+#endif /* _MSC_VER */
 
-#define INFO_DBG(m, f, args...)          \
+#define ERROR(...) _debug_printf("ERROR: "  __VA_ARGS__)
+#define WARN(...) _debug_printf("WARNING: "  __VA_ARGS__)
+#define INFO(...) _debug_printf( __VA_ARGS__)
+
+#define INFO_DBG(m, f, ...)          \
    do {                                  \
       if (m & NV50_IR_DEBUG_##f)         \
-         _debug_printf(args);             \
+         _debug_printf( __VA_ARGS__);             \
    } while(0)
 
-#define FATAL(args...)          \
+#define FATAL(...)          \
    do {                         \
-      fprintf(stderr, args);    \
+      fprintf(stderr,  __VA_ARGS__);    \
       abort();                  \
    } while(0)
 
 
-#define NV50_IR_FUNC_ALLOC_OBJ_DEF(obj, f, args...)               \
-   new ((f)->getProgram()->mem_##obj.allocate()) obj(f, args)
+#define NV50_IR_FUNC_ALLOC_OBJ_DEF(obj, f, ...)               \
+   new ((f)->getProgram()->mem_##obj.allocate()) obj(f,  __VA_ARGS__)
 
-#define new_Instruction(f, args...)                      \
-   NV50_IR_FUNC_ALLOC_OBJ_DEF(Instruction, f, args)
-#define new_CmpInstruction(f, args...)                   \
-   NV50_IR_FUNC_ALLOC_OBJ_DEF(CmpInstruction, f, args)
-#define new_TexInstruction(f, args...)                   \
-   NV50_IR_FUNC_ALLOC_OBJ_DEF(TexInstruction, f, args)
-#define new_FlowInstruction(f, args...)                  \
-   NV50_IR_FUNC_ALLOC_OBJ_DEF(FlowInstruction, f, args)
+#define new_Instruction(f, ...)                      \
+   NV50_IR_FUNC_ALLOC_OBJ_DEF(Instruction, f,  __VA_ARGS__)
+#define new_CmpInstruction(f, ...)                   \
+   NV50_IR_FUNC_ALLOC_OBJ_DEF(CmpInstruction, f,  __VA_ARGS__)
+#define new_TexInstruction(f, ...)                   \
+   NV50_IR_FUNC_ALLOC_OBJ_DEF(TexInstruction, f,  __VA_ARGS__)
+#define new_FlowInstruction(f, ...)                  \
+   NV50_IR_FUNC_ALLOC_OBJ_DEF(FlowInstruction, f,  __VA_ARGS__)
 
-#define new_LValue(f, args...)                  \
-   NV50_IR_FUNC_ALLOC_OBJ_DEF(LValue, f, args)
+#define new_LValue(f, ...)                  \
+   NV50_IR_FUNC_ALLOC_OBJ_DEF(LValue, f,  __VA_ARGS__)
 
 
-#define NV50_IR_PROG_ALLOC_OBJ_DEF(obj, p, args...)   \
-   new ((p)->mem_##obj.allocate()) obj(p, args)
+#define NV50_IR_PROG_ALLOC_OBJ_DEF(obj, p, ...)   \
+   new ((p)->mem_##obj.allocate()) obj(p,  __VA_ARGS__)
 
-#define new_Symbol(p, args...)                           \
-   NV50_IR_PROG_ALLOC_OBJ_DEF(Symbol, p, args)
-#define new_ImmediateValue(p, args...)                   \
-   NV50_IR_PROG_ALLOC_OBJ_DEF(ImmediateValue, p, args)
+#define new_Symbol(p, ...)                           \
+   NV50_IR_PROG_ALLOC_OBJ_DEF(Symbol, p,  __VA_ARGS__)
+#define new_ImmediateValue(p, ...)                   \
+   NV50_IR_PROG_ALLOC_OBJ_DEF(ImmediateValue, p,  __VA_ARGS__)
 
 
 #define delete_Instruction(p, insn) (p)->releaseInstruction(insn)

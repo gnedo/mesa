@@ -220,7 +220,7 @@ nouveau_vp3_fill_picparm_mpeg12_vp(struct nouveau_vp3_decoder *dec,
                                    unsigned *is_ref,
                                    char *map)
 {
-   struct mpeg12_picparm_vp pic_vp_stub = {}, *pic_vp = &pic_vp_stub;
+   struct mpeg12_picparm_vp pic_vp_stub = {0}, *pic_vp = &pic_vp_stub;
    uint32_t i, ret = 0x01010, ring; // !async_shutdown << 16 | watchdog << 12 | irq_record << 4 | unk;
    assert(!(dec->base.width & 0xf));
    *is_ref = desc->picture_coding_type <= 2;
@@ -269,7 +269,7 @@ nouveau_vp3_fill_picparm_mpeg4_vp(struct nouveau_vp3_decoder *dec,
                                   unsigned *is_ref,
                                   char *map)
 {
-   struct mpeg4_picparm_vp pic_vp_stub = {}, *pic_vp = &pic_vp_stub;
+   struct mpeg4_picparm_vp pic_vp_stub = {0}, *pic_vp = &pic_vp_stub;
    uint32_t ring, ret = 0x01014; // !async_shutdown << 16 | watchdog << 12 | irq_record << 4 | unk;
    *is_ref = desc->vop_coding_type <= 1;
 
@@ -316,7 +316,7 @@ nouveau_vp3_fill_picparm_h264_vp(struct nouveau_vp3_decoder *dec,
                                  unsigned *is_ref,
                                  char *map)
 {
-   struct h264_picparm_vp stub_h = {}, *h = &stub_h;
+   struct h264_picparm_vp stub_h = {0}, *h = &stub_h;
    unsigned ring, i, j = 0;
    assert(offsetof(struct h264_picparm_vp, u224) == 0x224);
    *is_ref = d->is_reference;
@@ -460,7 +460,7 @@ void nouveau_vp3_vp_caps(struct nouveau_vp3_decoder *dec, union pipe_desc desc,
 {
    struct nouveau_bo *bsp_bo = dec->bsp_bo[comm_seq % NOUVEAU_VP3_VIDEO_QDEPTH];
    enum pipe_video_format codec = u_reduce_video_profile(dec->base.profile);
-   char *vp = bsp_bo->map + VP_OFFSET;
+   char *vp = ((uint8_t*)(bsp_bo->map)) + VP_OFFSET;
 
    switch (codec){
    case PIPE_VIDEO_FORMAT_MPEG12:

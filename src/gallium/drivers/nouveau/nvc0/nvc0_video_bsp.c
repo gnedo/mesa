@@ -94,7 +94,7 @@ nvc0_decoder_bsp_next(struct nouveau_vp3_decoder *dec,
       memcpy(tmp_bo->map, bsp_bo->map, bsp_bo->size);
 
       /* update position to current chunk */
-      dec->bsp_ptr = tmp_bo->map + (dec->bsp_ptr - (char *)bsp_bo->map);
+      dec->bsp_ptr = ((uint8_t*)(tmp_bo->map)) + (dec->bsp_ptr - (char *)bsp_bo->map);
 
       nouveau_bo_ref(NULL, &bsp_bo);
       dec->bsp_bo[comm_seq % NOUVEAU_VP3_VIDEO_QDEPTH] = bsp_bo = tmp_bo;

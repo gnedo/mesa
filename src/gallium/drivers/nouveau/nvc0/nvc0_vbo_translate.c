@@ -256,7 +256,7 @@ disp_vertices_i08(struct push_context *ctx, unsigned start, unsigned count)
       translate->run_elts8(translate, elts, nR,
                            ctx->start_instance, ctx->instance_id, ctx->dest);
       count -= nR;
-      ctx->dest += nR * ctx->vertex_size;
+      ((uint8_t*)(ctx->dest)) += nR * ctx->vertex_size;
 
       while (nR) {
          unsigned nE = nR;
@@ -289,7 +289,7 @@ disp_vertices_i08(struct push_context *ctx, unsigned start, unsigned count)
          BEGIN_NVC0(push, NVC0_3D(VB_ELEMENT_U32), 1);
          PUSH_DATA (push, 0xffffffff);
          ++elts;
-         ctx->dest += ctx->vertex_size;
+         ((uint8_t*)(ctx->dest)) += ctx->vertex_size;
          ++pos;
          --count;
       }
@@ -313,7 +313,7 @@ disp_vertices_i16(struct push_context *ctx, unsigned start, unsigned count)
       translate->run_elts16(translate, elts, nR,
                             ctx->start_instance, ctx->instance_id, ctx->dest);
       count -= nR;
-      ctx->dest += nR * ctx->vertex_size;
+      ((uint8_t*)(ctx->dest)) += nR * ctx->vertex_size;
 
       while (nR) {
          unsigned nE = nR;
@@ -346,7 +346,7 @@ disp_vertices_i16(struct push_context *ctx, unsigned start, unsigned count)
          BEGIN_NVC0(push, NVC0_3D(VB_ELEMENT_U32), 1);
          PUSH_DATA (push, 0xffffffff);
          ++elts;
-         ctx->dest += ctx->vertex_size;
+         ((uint8_t*)(ctx->dest)) += ctx->vertex_size;
          ++pos;
          --count;
       }
@@ -370,7 +370,7 @@ disp_vertices_i32(struct push_context *ctx, unsigned start, unsigned count)
       translate->run_elts(translate, elts, nR,
                           ctx->start_instance, ctx->instance_id, ctx->dest);
       count -= nR;
-      ctx->dest += nR * ctx->vertex_size;
+      ((uint8_t*)(ctx->dest)) += nR * ctx->vertex_size;
 
       while (nR) {
          unsigned nE = nR;
@@ -403,7 +403,7 @@ disp_vertices_i32(struct push_context *ctx, unsigned start, unsigned count)
          BEGIN_NVC0(push, NVC0_3D(VB_ELEMENT_U32), 1);
          PUSH_DATA (push, 0xffffffff);
          ++elts;
-         ctx->dest += ctx->vertex_size;
+         ((uint8_t*)(ctx->dest)) += ctx->vertex_size;
          ++pos;
          --count;
       }

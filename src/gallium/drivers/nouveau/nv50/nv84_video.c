@@ -20,7 +20,18 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+#ifndef _WIN32
 #include <sys/mman.h>
+#else
+
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+
+#ifndef O_CLOEXEC
+# define O_CLOEXEC 02000000
+#endif /* O_CLOEXEC */
+#endif /* ndef _WIN32 */
+
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <fcntl.h>
@@ -87,7 +98,7 @@ nv84_load_firmwares(struct nouveau_device *dev, struct nv84_decoder *dec,
 
    ret = nv84_copy_firmware(fw1, fw->map, size1);
    if (fw2 && !ret)
-      ret = nv84_copy_firmware(fw2, fw->map + dec->vp_fw2_offset, size2);
+      ret = nv84_copy_firmware(fw2, ((uint8_t*)(fw->map)) + dec->vp_fw2_offset, size2);
    munmap(fw->map, fw->size);
    fw->map = NULL;
    if (!ret)
@@ -188,8 +199,8 @@ nv84_decoder_begin_frame_mpeg12(struct pipe_video_codec *decoder,
    int i;
 
    nouveau_bo_wait(dec->mpeg12_bo, NOUVEAU_BO_RDWR, dec->client);
-   dec->mpeg12_mb_info = dec->mpeg12_bo->map + 0x100;
-   dec->mpeg12_data = dec->mpeg12_bo->map + 0x100 +
+   dec->mpeg12_mb_info = ((uint8_t*)(dec->mpeg12_bo->map)) + 0x100;
+   dec->mpeg12_data = ((uint8_t*)(dec->mpeg12_bo->map)) + 0x100 +
       align(0x20 * mb(dec->base.width) * mb(dec->base.height), 0x100);
    if (desc->intra_matrix) {
       dec->zscan = desc->alternate_scan ? vl_zscan_alternate : vl_zscan_normal;

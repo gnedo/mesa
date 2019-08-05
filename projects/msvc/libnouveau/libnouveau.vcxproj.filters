@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9875501b-7c92-477b-9d03-97b7ec08466e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium">
+      <UniqueIdentifier>{0e129166-43eb-4cb0-85db-ed247baa4522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers">
+      <UniqueIdentifier>{469019fb-054d-4c9c-99b7-613b9797e668}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers\nouveau">
+      <UniqueIdentifier>{6f2eb918-9089-4841-9c7b-bc213c78807c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers\nouveau\codegen">
+      <UniqueIdentifier>{c3f6b4d5-1219-4d31-ae85-77d509a7dd3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers\nouveau\nv30">
+      <UniqueIdentifier>{c3eb855f-feb0-4992-9fb3-6f52bdcb1fe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers\nouveau\nv50">
+      <UniqueIdentifier>{9f8f8e2b-4d30-4795-a3e1-bacb6961aaa4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers\nouveau\nv0">
+      <UniqueIdentifier>{ad897676-7d01-47ab-b923-6bef7f97cb77}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_buffer.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_fence.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_heap.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_mm.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_screen.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_video.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video_bsp.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video_vp.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_bb.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_build_util.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_gk110.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_gm107.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_nv50.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_emit_nvc0.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_common.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_nir.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_tgsi.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_graph.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_gm107.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_helper.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_nv50.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_nvc0.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_peephole.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_print.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_ra.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_ssa.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_gm107.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nv50.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nvc0.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_util.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir.cpp">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_push.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_query.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_resource.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_screen.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_state.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_state_validate.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_texture.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_transfer.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_vbo.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_vertprog.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv40_verttex.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nvfx_fragprog.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nvfx_vertprog.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_clear.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_context.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_draw.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_format.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_fragprog.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_fragtex.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_miptree.c">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_miptree.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_program.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_push.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_metric.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_sm.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_resource.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_screen.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_shader_state.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_state.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_state_validate.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_surface.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_tex.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_transfer.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_vbo.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video_bsp.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video_vp.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video_bsp.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video_ppp.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video_vp.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_compute.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_context.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_formats.c">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_context.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_formats.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_miptree.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_program.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_metric.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_sm.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_sw.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_resource.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_screen.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_shader_state.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_state.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_state_validate.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_surface.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_tex.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_transfer.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_vbo.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_vbo_translate.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video_bsp.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video_ppp.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video_vp.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_compute.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_compute.c">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_buffer.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_context.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_debug.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_fence.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_gldefs.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_heap.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_mm.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_screen.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_video.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_vp3_video.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nouveau_winsys.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv_m2mf.xml.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv_object.xml.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv17_mpeg.xml.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv31_mpeg.xml.h">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_build_util.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_driver.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_from_common.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_graph.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_inlines.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_gm107.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_helper.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_lowering_nvc0.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_gm107.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nv50.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_target_nvc0.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir_util.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\unordered_set.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\codegen\nv50_ir.h">
+      <Filter>src\gallium\drivers\nouveau\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_resource.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_screen.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_state.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_transfer.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_vertprog.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_winsys.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30-40_3d.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv40_vertprog.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nvfx_shader.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv01_2d.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_context.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv30\nv30_format.h">
+      <Filter>src\gallium\drivers\nouveau\nv30</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_program.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_metric.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_query_hw_sm.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_resource.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_screen.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_stateobj.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_stateobj_tex.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_transfer.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_winsys.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv84_video.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv98_video.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\g80_defs.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\g80_texture.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_2d.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_3d.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_3ddefs.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_blit.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_compute.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nv50\nv50_context.h">
+      <Filter>src\gallium\drivers\nouveau\nv50</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_context.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_m2mf.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_macros.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_program.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_metric.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_hw_sm.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_query_sw.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_resource.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_screen.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_stateobj.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_video.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_winsys.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_compute.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_compute.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nve4_p2mf.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\gm107_texture.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_3d.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\drivers\nouveau\nvc0\nvc0_compute.xml.h">
+      <Filter>src\gallium\drivers\nouveau\nv0</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

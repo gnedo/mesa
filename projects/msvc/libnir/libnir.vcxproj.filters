@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1fd5672e-1170-47a9-b2ce-48e71e95d685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler">
+      <UniqueIdentifier>{5da9f1be-d364-4fca-a554-23f364a58f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler\nir">
+      <UniqueIdentifier>{4bd3677e-3d73-4d35-b0ba-26a5065ecccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler\spirv">
+      <UniqueIdentifier>{0f0e5118-10d5-48cd-864a-892a6fcb7fee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_builtin_builder.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_clone.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_control_flow.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_deref.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_dominance.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_from_ssa.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gather_info.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gather_ssa_types.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gather_xfb_info.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gs_count_vertices.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_inline_functions.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_instr_set.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_linking_helpers.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_liveness.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_loop_analyze.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_alpha_test.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_alu.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_alu_to_scalar.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_array_deref_of_vec.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_atomics_to_ssbo.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bit_size.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bitmap.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bool_to_float.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bool_to_int32.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_clamp_color_outputs.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_clip.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_clip_cull_distance_arrays.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_constant_initializers.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_double_ops.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_drawpixels.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_fb_read.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_flrp.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_fragcoord_wtrans.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_frexp.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_global_vars_to_local.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_gs_intrinsics.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_idiv.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_indirect_derefs.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_input_attachments.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_int_to_float.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_int64.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_interpolation.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_arrays_to_elements.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_to_scalar.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_to_temporaries.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_to_vector.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_load_const_to_scalar.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_locals_to_regs.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_non_uniform_access.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_packing.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_passthrough_edgeflags.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_patch_vertices.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_phis_to_scalar.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_regs_to_ssa.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_returns.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_scratch.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_subgroups.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_system_values.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_tex.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_to_source_mods.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_two_sided_color.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_uniforms_to_ubo.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_var_copies.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_vars_to_ssa.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_vec_to_movs.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_viewport_transform.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_wpos_center.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_wpos_ytransform.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_metadata.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_move_load_const.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_move_vec_src_uses_to_dest.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_normalize_cubemap_coords.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_combine_stores.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_comparison_pre.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_conditional_discard.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_constant_folding.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_copy_prop_vars.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_copy_propagate.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_cse.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_dce.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_dead_cf.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_dead_write_vars.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_find_array_copies.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_gcm.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_idiv_const.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_if.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_intrinsics.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_large_constants.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_loop_unroll.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_move_comparisons.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_move_load_ubo.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_peephole_select.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_rematerialize_compares.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_remove_phis.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_shrink_load.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_trivial_continues.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_undef.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_vectorize.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_phi_builder.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_print.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_propagate_invariant.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_remove_dead_variables.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_repair_ssa.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_search.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_serialize.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_split_per_member_structs.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_split_var_copies.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_split_vars.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_strip.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_sweep.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_to_lcssa.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_validate.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_worklist.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\spirv_to_nir.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\spirv2nir.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_alu.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_amd.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_cfg.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_glsl450.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_opencl.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_subgroup.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_variables.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\gl_spirv.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_algebraic.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\spirv_info.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opcodes.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_constant_expressions.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_gather_types.c">
+      <Filter>src\compiler\spirv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_intrinsics.c">
+      <Filter>src\compiler\nir</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_builder.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_builtin_builder.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_constant_expressions.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_control_flow.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_control_flow_private.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_deref.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_format_convert.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_instr_set.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_loop_analyze.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_phi_builder.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_search.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_search_helpers.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_serialize.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_vla.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_worklist.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_xfb_info.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\GLSL.ext.AMD.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\GLSL.std.450.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\nir_spirv.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\OpenCL.std.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\spirv.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\spirv_info.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\spirv\vtn_private.h">
+      <Filter>src\compiler\spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_opcodes.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_builder_opcodes.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_intrinsics.h">
+      <Filter>src\compiler\nir</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\compiler\nir\nir_intrinsics.py">
+      <Filter>src\compiler\nir</Filter>
+    </None>
+    <None Include="..\..\..\src\compiler\nir\README">
+      <Filter>src\compiler\nir</Filter>
+    </None>
+    <None Include="..\..\..\src\compiler\spirv\meson.build">
+      <Filter>src\compiler\spirv</Filter>
+    </None>
+    <None Include="..\..\..\src\compiler\spirv\spirv.core.grammar.json">
+      <Filter>src\compiler\spirv</Filter>
+    </None>
+    <None Include="..\..\..\src\compiler\nir\meson.build">
+      <Filter>src\compiler\nir</Filter>
+    </None>
+    <None Include="..\..\..\src\compiler\nir\nir_algebraic.py">
+      <Filter>src\compiler\nir</Filter>
+    </None>
+    <None Include="..\..\..\src\compiler\nir\nir_opcodes.py">
+      <Filter>src\compiler\nir</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_opt_algebraic.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\spirv\spirv_info_c.py">
+      <Filter>src\compiler\spirv</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_opcodes_c.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_opcodes_h.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_constant_expressions.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_builder_opcodes_h.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\spirv\vtn_gather_types_c.py">
+      <Filter>src\compiler\spirv</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_intrinsics_c.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_intrinsics_h.py">
+      <Filter>src\compiler\nir</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -94,7 +94,7 @@ gm200_validate_sample_locations(struct nvc0_context *nvc0, unsigned ms)
    uint8_t sample_locations[16][2];
    unsigned cb[64];
    unsigned i, pixel, pixel_y, pixel_x, sample;
-   uint32_t packed_locations[4] = {};
+   uint32_t packed_locations[4] = {0};
 
    screen->base.base.get_sample_pixel_grid(
       &screen->base.base, ms, &grid_width, &grid_height);

@@ -1,10 +1,11 @@
-#include <strings.h>
+#include <string.h>
 #include "pipe/p_context.h"
 #include "pipe/p_defines.h"
 #include "pipe/p_state.h"
 #include "util/u_dynarray.h"
 #include "util/u_debug.h"
 #include "util/u_memory.h"
+#include "util/bitscan.h"
 
 #include "pipe/p_shader_tokens.h"
 #include "tgsi/tgsi_parse.h"

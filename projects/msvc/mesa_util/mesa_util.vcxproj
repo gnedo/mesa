@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\util\bigmath.h" />
+    <ClInclude Include="..\..\..\src\util\bitscan.h" />
+    <ClInclude Include="..\..\..\src\util\bitset.h" />
+    <ClInclude Include="..\..\..\src\util\build_id.h" />
+    <ClInclude Include="..\..\..\src\util\crc32.h" />
+    <ClInclude Include="..\..\..\src\util\dag.h" />
+    <ClInclude Include="..\..\..\src\util\debug.h" />
+    <ClInclude Include="..\..\..\src\util\detect_os.h" />
+    <ClInclude Include="..\..\..\src\util\disk_cache.h" />
+    <ClInclude Include="..\..\..\src\util\fast_idiv_by_const.h" />
+    <ClInclude Include="..\..\..\src\util\fast_urem_by_const.h" />
+    <ClInclude Include="..\..\..\src\util\format_r11g11b10f.h" />
+    <ClInclude Include="..\..\..\src\util\format_rgb9e5.h" />
+    <ClInclude Include="..\..\..\src\util\format_srgb.h" />
+    <ClInclude Include="..\..\..\src\util\futex.h" />
+    <ClInclude Include="..\..\..\src\util\half_float.h" />
+    <ClInclude Include="..\..\..\src\util\hash_table.h" />
+    <ClInclude Include="..\..\..\src\util\list.h" />
+    <ClInclude Include="..\..\..\src\util\macros.h" />
+    <ClInclude Include="..\..\..\src\util\mesa-sha1.h" />
+    <ClInclude Include="..\..\..\src\util\os_file.h" />
+    <ClInclude Include="..\..\..\src\util\os_memory.h" />
+    <ClInclude Include="..\..\..\src\util\os_memory_aligned.h" />
+    <ClInclude Include="..\..\..\src\util\os_memory_debug.h" />
+    <ClInclude Include="..\..\..\src\util\os_memory_stdc.h" />
+    <ClInclude Include="..\..\..\src\util\os_misc.h" />
+    <ClInclude Include="..\..\..\src\util\os_time.h" />
+    <ClInclude Include="..\..\..\src\util\ralloc.h" />
+    <ClInclude Include="..\..\..\src\util\rand_xor.h" />
+    <ClInclude Include="..\..\..\src\util\rb_tree.h" />
+    <ClInclude Include="..\..\..\src\util\register_allocate.h" />
+    <ClInclude Include="..\..\..\src\util\rgtc.h" />
+    <ClInclude Include="..\..\..\src\util\rounding.h" />
+    <ClInclude Include="..\..\..\src\util\set.h" />
+    <ClInclude Include="..\..\..\src\util\sha1\sha1.h" />
+    <ClInclude Include="..\..\..\src\util\simple_list.h" />
+    <ClInclude Include="..\..\..\src\util\simple_mtx.h" />
+    <ClInclude Include="..\..\..\src\util\slab.h" />
+    <ClInclude Include="..\..\..\src\util\string_buffer.h" />
+    <ClInclude Include="..\..\..\src\util\strndup.h" />
+    <ClInclude Include="..\..\..\src\util\strtod.h" />
+    <ClInclude Include="..\..\..\src\util\texcompress_rgtc_tmp.h" />
+    <ClInclude Include="..\..\..\src\util\timespec.h" />
+    <ClInclude Include="..\..\..\src\util\u_atomic.h" />
+    <ClInclude Include="..\..\..\src\util\u_cpu_detect.h" />
+    <ClInclude Include="..\..\..\src\util\u_debug.h" />
+    <ClInclude Include="..\..\..\src\util\u_drm.h" />
+    <ClInclude Include="..\..\..\src\util\u_dynarray.h" />
+    <ClInclude Include="..\..\..\src\util\u_endian.h" />
+    <ClInclude Include="..\..\..\src\util\u_math.h" />
+    <ClInclude Include="..\..\..\src\util\u_memory.h" />
+    <ClInclude Include="..\..\..\src\util\u_process.h" />
+    <ClInclude Include="..\..\..\src\util\u_queue.h" />
+    <ClInclude Include="..\..\..\src\util\u_string.h" />
+    <ClInclude Include="..\..\..\src\util\u_thread.h" />
+    <ClInclude Include="..\..\..\src\util\u_vector.h" />
+    <ClInclude Include="..\..\..\src\util\vma.h" />
+    <ClInclude Include="..\..\..\src\util\xmlconfig.h" />
+    <ClInclude Include="..\..\..\src\util\xmlpool.h" />
+    <ClInclude Include="..\..\..\src\win32\win32_compat.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\util\bitscan.c" />
+    <ClCompile Include="..\..\..\src\util\bitset_test.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\build_id.c" />
+    <ClCompile Include="..\..\..\src\util\crc32.c" />
+    <ClCompile Include="..\..\..\src\util\dag.c" />
+    <ClCompile Include="..\..\..\src\util\debug.c" />
+    <ClCompile Include="..\..\..\src\util\disk_cache.c" />
+    <ClCompile Include="..\..\..\src\util\fast_idiv_by_const.c" />
+    <ClCompile Include="..\..\..\src\util\format_srgb.c" />
+    <ClCompile Include="..\..\..\src\util\half_float.c" />
+    <ClCompile Include="..\..\..\src\util\hash_table.c" />
+    <ClCompile Include="..\..\..\src\util\mesa-sha1.c" />
+    <ClCompile Include="..\..\..\src\util\mesa-sha1_test.c" />
+    <ClCompile Include="..\..\..\src\util\os_file.c" />
+    <ClCompile Include="..\..\..\src\util\os_misc.c" />
+    <ClCompile Include="..\..\..\src\util\os_time.c" />
+    <ClCompile Include="..\..\..\src\util\ralloc.c" />
+    <ClCompile Include="..\..\..\src\util\rand_xor.c" />
+    <ClCompile Include="..\..\..\src\util\rb_tree.c" />
+    <ClCompile Include="..\..\..\src\util\register_allocate.c" />
+    <ClCompile Include="..\..\..\src\util\rgtc.c" />
+    <ClCompile Include="..\..\..\src\util\roundeven_test.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\set.c" />
+    <ClCompile Include="..\..\..\src\util\sha1\sha1.c" />
+    <ClCompile Include="..\..\..\src\util\slab.c" />
+    <ClCompile Include="..\..\..\src\util\string_buffer.c" />
+    <ClCompile Include="..\..\..\src\util\strtod.c" />
+    <ClCompile Include="..\..\..\src\util\u_atomic.c" />
+    <ClCompile Include="..\..\..\src\util\u_atomic_test.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\u_cpu_detect.c" />
+    <ClCompile Include="..\..\..\src\util\u_debug.c" />
+    <ClCompile Include="..\..\..\src\util\u_math.c" />
+    <ClCompile Include="..\..\..\src\util\u_process.c" />
+    <ClCompile Include="..\..\..\src\util\u_queue.c" />
+    <ClCompile Include="..\..\..\src\util\u_vector.c" />
+    <ClCompile Include="..\..\..\src\util\vma.c" />
+    <ClCompile Include="..\..\..\src\util\xmlconfig.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\win32\win32_compat.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\util\format_srgb.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\util\sha1\README">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{9EAC3EE6-DB89-4EC3-A5AC-53F9A4FC8D48}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>mesautil</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\util</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\util</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\util</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src\util</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

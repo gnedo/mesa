@@ -384,16 +384,16 @@ static const char *gatherCompStr[4] =
    "r", "g", "b", "a",
 };
 
-#define PRINT(args...)                                \
+#define PRINT(...)                                \
    do {                                               \
-      pos += snprintf(&buf[pos], size - pos, args);   \
+      pos += snprintf(&buf[pos], size - pos, __VA_ARGS__);   \
    } while(0)
 
-#define SPACE_PRINT(cond, args...)                      \
+#define SPACE_PRINT(cond, ...)                      \
    do {                                                 \
       if (cond)                                         \
          buf[pos++] = ' ';                              \
-      pos += snprintf(&buf[pos], size - pos, args);     \
+      pos += snprintf(&buf[pos], size - pos, __VA_ARGS__);     \
    } while(0)
 
 #define SPACE()                                    \

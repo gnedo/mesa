@@ -637,8 +637,8 @@ nv30_transfer_rect_cpu(XFER_ARGS)
 
    nouveau_bo_map(src->bo, NOUVEAU_BO_RD, nv30->base.client);
    nouveau_bo_map(dst->bo, NOUVEAU_BO_WR, nv30->base.client);
-   srcmap = src->bo->map + src->offset;
-   dstmap = dst->bo->map + dst->offset;
+   srcmap = ((uint8_t*)(src->bo->map)) + src->offset;
+   dstmap = ((uint8_t*)(dst->bo->map)) + dst->offset;
 
    for (y = 0; y < (dst->y1 - dst->y0); y++) {
       for (x = 0; x < (dst->x1 - dst->x0); x++) {
@@ -661,7 +661,7 @@ nv30_transfer_rect(struct nv30_context *nv30, enum nv30_transfer_filter filter,
       { "sifm", nv30_transfer_sifm, nv30_transfer_rect_sifm },
       { "blit", nv30_transfer_blit, nv30_transfer_rect_blit },
       { "rect", nv30_transfer_cpu, nv30_transfer_rect_cpu },
-      {}
+      {0}
    };
 
    for (method = methods; method->possible; method++) {

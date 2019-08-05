@@ -20,7 +20,19 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
+#ifndef _WIN32
 #include <sys/mman.h>
+#else
+#include <BaseTsd.h>
+typedef SSIZE_T ssize_t;
+
+#ifndef O_CLOEXEC
+# define O_CLOEXEC 02000000
+#endif
+
+#endif /* _WIN32 */
+#if defined(_MSC_VER)
+#endif
 #include <sys/stat.h>
 #include <stdio.h>
 #include <fcntl.h>
@@ -317,7 +329,7 @@ nouveau_vp3_load_firmware(struct nouveau_vp3_decoder *dec,
       return 1;
    }
 
-   end = dec->fw_bo->map + r - 4;
+   end = ((uint8_t *)(dec->fw_bo->map)) + r - 4;
    endval = *end;
    while (endval == *end)
       end--;
@@ -360,7 +372,7 @@ nouveau_decoder_msvld[] = {
    { GT212_MSVLD, -1 },
    { GF100_MSVLD, -1 },
    { GK104_MSVLD, -1 },
-   {}
+   {0}
 };
 
 static int
@@ -377,7 +389,7 @@ firmware_present(struct pipe_screen *pscreen, enum pipe_video_profile profile)
    if (!(screen->firmware_info.profiles_checked & 1)) {
       struct nouveau_object *channel = NULL, *bsp = NULL;
       struct nv04_fifo nv04_data = {.vram = 0xbeef0201, .gart = 0xbeef0202};
-      struct nvc0_fifo nvc0_args = {};
+      struct nvc0_fifo nvc0_args = {0};
       struct nve0_fifo nve0_args = {.engine = NVE0_FIFO_ENGINE_BSP};
       void *data = NULL;
       int size;

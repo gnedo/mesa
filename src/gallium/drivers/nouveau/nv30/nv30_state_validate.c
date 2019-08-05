@@ -403,7 +403,7 @@ static struct state_validate hwtnl_validate_list[] = {
     { nv30_fragtex_validate,       NV30_NEW_FRAGTEX },
     { nv40_verttex_validate,       NV30_NEW_VERTTEX },
     { nv30_vbo_validate,           NV30_NEW_VERTEX | NV30_NEW_ARRAYS },
-    {}
+    {0}
 };
 
 #define NV30_SWTNL_MASK (NV30_NEW_VIEWPORT |  \
@@ -429,7 +429,7 @@ static struct state_validate swtnl_validate_list[] = {
     { nv30_fragprog_validate,      NV30_NEW_FRAGPROG | NV30_NEW_FRAGCONST },
     { nv30_validate_fragment,      NV30_NEW_FRAMEBUFFER | NV30_NEW_FRAGPROG },
     { nv30_fragtex_validate,       NV30_NEW_FRAGTEX },
-    {}
+    {0}
 };
 
 static void

@@ -145,7 +145,7 @@ nv84_decoder_vp_h264(struct nv84_decoder *dec,
    }
 
    memcpy(dec->vp_params->map, &param1, sizeof(param1));
-   memcpy(dec->vp_params->map + 0x400, &param2, sizeof(param2));
+   memcpy(((uint8_t*)(dec->vp_params->map)) + 0x400, &param2, sizeof(param2));
 
    nouveau_pushbuf_refn(push, bo_refs, num_refs);
 
@@ -445,7 +445,7 @@ nv84_decoder_vp_mpeg12_mb(struct nv84_decoder *dec,
    }
 
    memcpy(dec->mpeg12_mb_info, &info, sizeof(info));
-   dec->mpeg12_mb_info += sizeof(info);
+   ((uint8_t*)(dec->mpeg12_mb_info)) += sizeof(info);
 
    if (macrob->num_skipped_macroblocks) {
       info.index++;
@@ -453,7 +453,7 @@ nv84_decoder_vp_mpeg12_mb(struct nv84_decoder *dec,
       info.skipped = macrob->num_skipped_macroblocks - 1;
       memset(info.block_counts, 0, sizeof(info.block_counts));
       memcpy(dec->mpeg12_mb_info, &info, sizeof(info));
-      dec->mpeg12_mb_info += sizeof(info);
+      ((uint8_t*)(dec->mpeg12_mb_info)) += sizeof(info);
    }
 }
 
@@ -508,7 +508,7 @@ nv84_decoder_vp_mpeg12(struct nv84_decoder *dec,
    header.luma_bottom_size = y->layer_stride;
    header.chroma_top_size = uv->layer_stride;
    header.mbs = mb(dec->base.width) * mb(dec->base.height);
-   header.mb_info_size = dec->mpeg12_mb_info - dec->mpeg12_bo->map - 0x100;
+   header.mb_info_size = ((uint8_t*)(dec->mpeg12_mb_info)) - dec->mpeg12_bo->map - 0x100;
    header.mb_width_minus1 = mb(dec->base.width) - 1;
    header.mb_height_minus1 = mb(dec->base.height) - 1;
    header.width = align(dec->base.width, 16);

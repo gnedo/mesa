@@ -193,7 +193,7 @@ nouveau_vp3_fill_picparm_h264_bsp(struct nouveau_vp3_decoder *dec,
                                   struct pipe_h264_picture_desc *d,
                                   char *map)
 {
-   struct h264_picparm_bsp stub_h = {}, *h = &stub_h;
+   struct h264_picparm_bsp stub_h = {0}, *h = &stub_h;
    uint32_t caps = (d->slice_count << 4)&0xfff0;
 
    assert(!(d->slice_count & ~0xfff));
@@ -234,7 +234,7 @@ static inline struct strparm_bsp *strparm_bsp(struct nouveau_vp3_decoder *dec)
 {
    unsigned comm_seq = dec->fence_seq;
    struct nouveau_bo *bsp_bo = dec->bsp_bo[comm_seq % NOUVEAU_VP3_VIDEO_QDEPTH];
-   return (struct strparm_bsp *)(bsp_bo->map + 0x100);
+   return (struct strparm_bsp *)(((uint8_t)bsp_bo->map) + 0x100);
 }
 
 void

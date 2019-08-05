@@ -3,7 +3,11 @@
 #define __NVC0_WINSYS_H__
 
 #include <stdint.h>
+#ifndef _WIN32
 #include <unistd.h>
+#else
+#include <io.h>
+#endif /* ndef _WIN32 */
 
 #include "pipe/p_defines.h"
 

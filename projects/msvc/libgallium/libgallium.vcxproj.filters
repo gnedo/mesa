@@ -1,0 +1,1128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2c34dabe-1507-4fd8-bc6b-df468670a723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium">
+      <UniqueIdentifier>{b0396779-27a7-4917-adb0-7ac1fd4de284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary">
+      <UniqueIdentifier>{206931dc-2a4e-4166-99f6-9172c1f62a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\cso_cache">
+      <UniqueIdentifier>{4c1cac7a-e0fa-4c91-a7e9-f3b332f2ea54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\draw">
+      <UniqueIdentifier>{faf47753-3ab0-4281-92a1-ffa642e06410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\driver_ddebug">
+      <UniqueIdentifier>{bb75de50-47e0-4bc3-9de8-268b5f344154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\driver_noop">
+      <UniqueIdentifier>{a5b825af-6474-42e5-9596-2695e8a5ed13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\driver_rbug">
+      <UniqueIdentifier>{76ac08d7-27f4-47c6-9acb-05179b8b77a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\driver_trace">
+      <UniqueIdentifier>{609c50e0-f8d5-42ba-b425-358abdcc70bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\hud">
+      <UniqueIdentifier>{efe68960-5308-45b8-b359-6a33aa451797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\pipebuffer">
+      <UniqueIdentifier>{2b78e4a0-f0f2-44fa-853d-42225d0bbd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\os">
+      <UniqueIdentifier>{1212eef5-6443-45f3-9f96-0180350cff80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\postprocess">
+      <UniqueIdentifier>{5dd516ec-8e2e-403c-9a31-fd66323a669d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\rbug">
+      <UniqueIdentifier>{007d37ed-2042-40a0-85a6-61d23cda7714}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\rtasm">
+      <UniqueIdentifier>{a005cb62-02e1-40f3-a7ee-e263da391544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\tgsi">
+      <UniqueIdentifier>{b776be10-7088-4821-a27f-3074f25ec802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\translate">
+      <UniqueIdentifier>{6c5b708a-8974-46bb-a362-358f02f03afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\util">
+      <UniqueIdentifier>{3eeddfec-4a82-4437-a34c-4f178e8deb27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\auxiliary\nir">
+      <UniqueIdentifier>{a4056068-8160-4833-bcb3-79fa1b030959}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_cache.h">
+      <Filter>src\gallium\auxiliary\cso_cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_context.h">
+      <Filter>src\gallium\auxiliary\cso_cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_hash.h">
+      <Filter>src\gallium\auxiliary\cso_cache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_prim_assembler.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_prim_assembler_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_private.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pt.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_decompose.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_vsplit_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_so_emit_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_split_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_vbuf.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_vertex.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_vs.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_cliptest_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_context.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_decompose_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_fs.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_gs.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_gs_tmp.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_llvm.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe.h">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_util.h">
+      <Filter>src\gallium\auxiliary\driver_ddebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_pipe.h">
+      <Filter>src\gallium\auxiliary\driver_ddebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_public.h">
+      <Filter>src\gallium\auxiliary\driver_ddebug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_noop\noop_public.h">
+      <Filter>src\gallium\auxiliary\driver_noop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_objects.h">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_public.h">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_screen.h">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_context.h">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump_defines.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump_state.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_public.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_screen.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_texture.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_context.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump.h">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\hud\hud_private.h">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\hud\font.h">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\hud\hud_context.h">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\os\os_process.h">
+      <Filter>src\gallium\auxiliary\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\os\os_thread.h">
+      <Filter>src\gallium\auxiliary\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\os\os_mman.h">
+      <Filter>src\gallium\auxiliary\os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_cache.h">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_slab.h">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_validate.h">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_buffer.h">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_buffer_fenced.h">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr.h">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_celshade.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_colors.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_filters.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_mlaa.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_mlaa_areamap.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_private.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\filters.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\postprocess.h">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_internal.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_proto.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_shader.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_texture.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_connection.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_context.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_core.h">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_execmem.h">
+      <Filter>src\gallium\auxiliary\rtasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_x86sse.h">
+      <Filter>src\gallium\auxiliary\rtasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_cpu.h">
+      <Filter>src\gallium\auxiliary\rtasm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_build.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_dump.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_emulate.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_exec.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_from_mesa.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_info.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_info_opcodes.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_iterate.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_lowering.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_opcode_tmp.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_parse.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_point_sprite.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_sanity.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_scan.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_strings.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_text.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_transform.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_two_side.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_ureg.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_util.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_aa_point.h">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\translate\translate.h">
+      <Filter>src\gallium\auxiliary\translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\translate\translate_cache.h">
+      <Filter>src\gallium\auxiliary\translate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_bitcast.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_bitmask.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_blend.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_blit.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_blitter.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_box.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_cache.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_compute.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_describe.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_flush.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_gallium.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_image.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_refcnt.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_stack.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_symbol.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dirty_flags.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dirty_surfaces.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dl.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_draw.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_draw_quad.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dual_blend.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dump.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_fifo.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_file.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_bptc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_etc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_latc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_other.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_rgtc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_s3tc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_tests.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_yuv.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_zs.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_framebuffer.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_gen_mipmap.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_half.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_handle_table.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_hash_table.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_helpers.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_idalloc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_index_modify.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_inlines.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_linear.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_log.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_mm.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_network.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pack_color.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pointer.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_prim.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_prim_restart.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pstipple.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pwr8.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_range.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_rect.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_resource.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_sampler.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_screen.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_simple_shaders.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_split_prim.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_sse.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_suballoc.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_surface.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_surfaces.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_tests.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_texture.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_threaded_context.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_threaded_context_calls.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_tile.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_transfer.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_transfer_helper.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_upload_mgr.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_vbuf.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_video.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_viewport.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\dbghelp.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_async_debug.h">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\nir\tgsi_to_nir.h">
+      <Filter>src\gallium\auxiliary\nir</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_context.c">
+      <Filter>src\gallium\auxiliary\cso_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_hash.c">
+      <Filter>src\gallium\auxiliary\cso_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_cache.c">
+      <Filter>src\gallium\auxiliary\cso_cache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_validate.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_vbuf.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_wide_line.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_wide_point.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_prim_assembler.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_emit.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_emit.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_shade_emit.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_shade_pipeline.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_shade_pipeline_llvm.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_post_vs.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_so_emit.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_util.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_vsplit.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vertex.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs_exec.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs_llvm.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs_variant.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_context.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_fs.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_gs.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_llvm.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_llvm_sample.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_aaline.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_aapoint.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_clip.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_cull.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_flatshade.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_offset.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_pstipple.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_stipple.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_twoside.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_unfilled.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_util.c">
+      <Filter>src\gallium\auxiliary\draw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_screen.c">
+      <Filter>src\gallium\auxiliary\driver_ddebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_context.c">
+      <Filter>src\gallium\auxiliary\driver_ddebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_draw.c">
+      <Filter>src\gallium\auxiliary\driver_ddebug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_noop\noop_state.c">
+      <Filter>src\gallium\auxiliary\driver_noop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_noop\noop_pipe.c">
+      <Filter>src\gallium\auxiliary\driver_noop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_objects.c">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_screen.c">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_context.c">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_core.c">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump_state.c">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_screen.c">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_texture.c">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_context.c">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump.c">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_driver_query.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_fps.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_nic.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_sensors_temp.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\font.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_context.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_cpu.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_cpufreq.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_diskstat.c">
+      <Filter>src\gallium\auxiliary\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\os\os_process.c">
+      <Filter>src\gallium\auxiliary\os</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_debug.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_mm.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_slab.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_cache.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_slab.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_validate.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_buffer_fenced.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_cache.c">
+      <Filter>src\gallium\auxiliary\pipebuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_celshade.c">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_colors.c">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_init.c">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_mlaa.c">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_program.c">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_run.c">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_demarshal.c">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_shader.c">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_texture.c">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_connection.c">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_context.c">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_core.c">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_execmem.c">
+      <Filter>src\gallium\auxiliary\rtasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_x86sse.c">
+      <Filter>src\gallium\auxiliary\rtasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_cpu.c">
+      <Filter>src\gallium\auxiliary\rtasm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_build.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_dump.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_emulate.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_exec.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_from_mesa.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_info.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_iterate.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_lowering.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_parse.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_point_sprite.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_sanity.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_scan.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_strings.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_text.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_transform.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_two_side.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_ureg.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_util.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_aa_point.c">
+      <Filter>src\gallium\auxiliary\tgsi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate_cache.c">
+      <Filter>src\gallium\auxiliary\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate_generic.c">
+      <Filter>src\gallium\auxiliary\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate_sse.c">
+      <Filter>src\gallium\auxiliary\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate.c">
+      <Filter>src\gallium\auxiliary\translate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_bitmask.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_blit.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_blitter.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_cache.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_compute.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_describe.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_flush.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_gallium.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_image.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_memory.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_refcnt.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_stack.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_stack_android.cpp">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_symbol.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_dl.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_draw.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_draw_quad.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_dump_defines.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_dump_state.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_bptc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_etc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_latc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_other.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_rgtc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_s3tc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_tests.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_yuv.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_zs.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_framebuffer.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_gen_mipmap.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_handle_table.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_hash_table.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_helpers.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_idalloc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_index_modify.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_linear.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_log.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_mm.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_network.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_prim.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_prim_restart.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_pstipple.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_resource.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_sampler.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_screen.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_simple_shaders.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_suballoc.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_surface.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_surfaces.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_tests.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_texture.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_threaded_context.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_tile.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_transfer.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_transfer_helper.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_upload_mgr.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_vbuf.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_async_debug.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\nir\tgsi_to_nir.c">
+      <Filter>src\gallium\auxiliary\nir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\ind_rbug_context.c">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\ind_rbug_core.c">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_table.c">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\gallium\auxiliary\driver_rbug\README">
+      <Filter>src\gallium\auxiliary\driver_rbug</Filter>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\driver_trace\README">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\postprocess\ADDING">
+      <Filter>src\gallium\auxiliary\postprocess</Filter>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\rbug\README">
+      <Filter>src\gallium\auxiliary\rbug</Filter>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\util\u_format.csv">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\util\u_format_pack.py">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\util\u_format_parse.py">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\src\gallium\auxiliary\driver_trace\trace.xsl">
+      <Filter>src\gallium\auxiliary\driver_trace</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\gallium\auxiliary\util\u_format_table.py">
+      <Filter>src\gallium\auxiliary\util</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

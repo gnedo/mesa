@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_cache.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_hash.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_cliptest_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_decompose_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_fs.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_gs.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_gs_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_llvm.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_prim_assembler.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_prim_assembler_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_private.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pt.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_decompose.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_vsplit_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_so_emit_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_split_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_vbuf.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_vertex.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\draw\draw_vs.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_pipe.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_public.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_util.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_noop\noop_public.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_objects.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_public.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump_defines.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump_state.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_public.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_texture.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\hud\font.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\hud\hud_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\hud\hud_private.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\nir\tgsi_to_nir.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\os\os_mman.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\os\os_process.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\os\os_thread.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_buffer.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_buffer_fenced.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_cache.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_slab.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_validate.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\filters.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\postprocess.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_celshade.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_colors.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_filters.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_mlaa.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_mlaa_areamap.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\postprocess\pp_private.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_connection.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_core.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_internal.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_proto.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_shader.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rbug\rbug_texture.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_cpu.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_execmem.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_x86sse.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_aa_point.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_build.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_dump.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_emulate.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_exec.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_from_mesa.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_info.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_info_opcodes.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_iterate.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_lowering.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_opcode_tmp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_parse.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_point_sprite.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_sanity.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_scan.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_strings.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_text.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_transform.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_two_side.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_ureg.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_util.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\translate\translate.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\translate\translate_cache.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\dbghelp.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_async_debug.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_bitcast.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_bitmask.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_blend.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_blit.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_blitter.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_box.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_cache.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_compute.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_describe.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_flush.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_gallium.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_image.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_refcnt.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_stack.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_debug_symbol.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dirty_flags.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dirty_surfaces.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dl.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_draw.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_draw_quad.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dual_blend.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_dump.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_fifo.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_file.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_bptc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_etc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_latc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_other.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_rgtc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_s3tc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_tests.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_yuv.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_format_zs.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_framebuffer.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_gen_mipmap.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_half.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_handle_table.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_hash_table.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_helpers.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_idalloc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_index_modify.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_inlines.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_linear.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_log.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_mm.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_network.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pack_color.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pointer.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_prim.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_prim_restart.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pstipple.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_pwr8.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_range.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_rect.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_resource.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_sampler.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_screen.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_simple_shaders.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_split_prim.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_sse.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_suballoc.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_surface.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_surfaces.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_tests.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_texture.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_threaded_context.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_threaded_context_calls.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_tile.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_transfer.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_transfer_helper.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_upload_mgr.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_vbuf.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_video.h" />
+    <ClInclude Include="..\..\..\src\gallium\auxiliary\util\u_viewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_cache.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\cso_cache\cso_hash.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_fs.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_gs.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_llvm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_llvm_sample.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_aaline.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_aapoint.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_clip.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_cull.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_flatshade.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_offset.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_pstipple.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_stipple.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_twoside.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_unfilled.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_util.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_validate.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_vbuf.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_wide_line.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pipe_wide_point.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_prim_assembler.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_emit.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_emit.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_shade_emit.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_shade_pipeline.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_fetch_shade_pipeline_llvm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_post_vs.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_so_emit.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_util.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_pt_vsplit.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vertex.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs_exec.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs_llvm.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\draw\draw_vs_variant.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_draw.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_ddebug\dd_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_noop\noop_pipe.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_noop\noop_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\ind_rbug_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\ind_rbug_core.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_context.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_core.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_objects.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_rbug\rbug_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_dump_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\driver_trace\tr_texture.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\font.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_cpu.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_cpufreq.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_diskstat.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_driver_query.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_fps.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_nic.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\hud\hud_sensors_temp.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\nir\tgsi_to_nir.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\os\os_process.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_buffer_fenced.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_cache.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_debug.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_mm.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_bufmgr_slab.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_cache.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_slab.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4703</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\pipebuffer\pb_validate.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_celshade.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_colors.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_init.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_mlaa.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_program.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\postprocess\pp_run.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_connection.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_core.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_demarshal.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_shader.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rbug\rbug_texture.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_cpu.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_execmem.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\rtasm\rtasm_x86sse.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_aa_point.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_build.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_dump.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_emulate.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_exec.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_from_mesa.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_info.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_iterate.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_lowering.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_parse.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_point_sprite.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_sanity.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_scan.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_strings.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_text.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_transform.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_two_side.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_ureg.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\tgsi\tgsi_util.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate_cache.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate_generic.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\translate\translate_sse.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_async_debug.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_bitmask.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_blit.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_blitter.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_cache.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_compute.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_describe.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_flush.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_gallium.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_image.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_memory.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_refcnt.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_stack.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_stack_android.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_debug_symbol.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_dl.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_draw.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_draw_quad.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_dump_defines.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_dump_state.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_bptc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_etc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_latc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_other.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_rgtc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_s3tc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_table.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_tests.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_yuv.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_format_zs.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_framebuffer.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_gen_mipmap.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_handle_table.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_hash_table.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_helpers.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_idalloc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_index_modify.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_linear.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_log.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_mm.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_network.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_prim.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_prim_restart.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_pstipple.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_resource.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_sampler.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_screen.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_simple_shaders.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_suballoc.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_surface.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_surfaces.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_tests.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_texture.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_threaded_context.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_tile.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_transfer.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_transfer_helper.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_upload_mgr.c" />
+    <ClCompile Include="..\..\..\src\gallium\auxiliary\util\u_vbuf.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\gallium\auxiliary\driver_rbug\README">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\driver_trace\README">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\postprocess\ADDING">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\rbug\README">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\gallium\auxiliary\util\u_format.csv" />
+    <None Include="..\..\..\src\gallium\auxiliary\util\u_format_pack.py" />
+    <None Include="..\..\..\src\gallium\auxiliary\util\u_format_parse.py" />
+    <CustomBuild Include="..\..\..\src\gallium\auxiliary\util\u_format_table.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) u_format.csv
+python %(Filename)%(Extension) u_format.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) u_format.csv
+python %(Filename)%(Extension) u_format.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) u_format.csv
+python %(Filename)%(Extension) u_format.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) u_format.csv
+python %(Filename)%(Extension) u_format.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\src\gallium\auxiliary\driver_trace\trace.xsl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{31398414-F902-4032-A95D-60822E2CBAF7}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libgallium</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\gallium\auxiliary;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

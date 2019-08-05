@@ -44,8 +44,13 @@ typedef unsigned int drm_handle_t;
 
 #else /* One of the BSDs */
 
+#ifndef _WIN32
 #include <sys/ioccom.h>
+#endif /* ndef _WIN32 */
+
 #include <sys/types.h>
+#include <stdint.h>
+
 typedef int8_t   __s8;
 typedef uint8_t  __u8;
 typedef int16_t  __s16;

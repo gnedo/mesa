@@ -74,7 +74,7 @@ nvc0_decoder_end_frame(struct pipe_video_codec *decoder,
 
    unsigned vp_caps, is_ref;
    ASSERTED unsigned ret; /* used in debug checks */
-   struct nouveau_vp3_video_buffer *refs[16] = {};
+   struct nouveau_vp3_video_buffer *refs[16] = {0};
 
    desc.base = picture;
 
@@ -137,8 +137,8 @@ nvc0_create_decoder(struct pipe_context *context,
       } else {
          void *data;
          u32 size;
-         struct nvc0_fifo nvc0_args = {};
-         struct nve0_fifo nve0_args = {};
+         struct nvc0_fifo nvc0_args = {0};
+         struct nve0_fifo nve0_args = {0};
 
          if (!kepler) {
             size = sizeof(nvc0_args);

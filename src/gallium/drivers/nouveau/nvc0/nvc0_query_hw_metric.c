@@ -667,8 +667,8 @@ nvc0_hw_metric_get_query_result(struct nvc0_context *nvc0,
    struct nvc0_hw_metric_query *hmq = nvc0_hw_metric_query(hq);
    struct nvc0_screen *screen = nvc0->screen;
    struct nouveau_device *dev = screen->base.device;
-   union pipe_query_result results[8] = {};
-   uint64_t res64[8] = {};
+   union pipe_query_result results[8] = {0};
+   uint64_t res64[8] = {0};
    uint64_t value = 0;
    bool ret = false;
    unsigned i;

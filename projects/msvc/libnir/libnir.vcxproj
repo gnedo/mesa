@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_builtin_builder.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_clone.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_constant_expressions.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4146</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_control_flow.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_deref.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_dominance.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_from_ssa.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gather_info.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gather_ssa_types.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gather_xfb_info.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_gs_count_vertices.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_inline_functions.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_instr_set.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_intrinsics.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_linking_helpers.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_liveness.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_loop_analyze.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_alpha_test.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_alu.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_alu_to_scalar.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_array_deref_of_vec.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_atomics_to_ssbo.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bitmap.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bit_size.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bool_to_float.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_bool_to_int32.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_clamp_color_outputs.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_clip.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_clip_cull_distance_arrays.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_constant_initializers.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_double_ops.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_drawpixels.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_fb_read.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_flrp.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_fragcoord_wtrans.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_frexp.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_global_vars_to_local.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_gs_intrinsics.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_idiv.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_indirect_derefs.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_input_attachments.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_int64.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_interpolation.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_int_to_float.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_arrays_to_elements.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_to_scalar.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_to_temporaries.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_io_to_vector.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_load_const_to_scalar.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_locals_to_regs.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_non_uniform_access.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_packing.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_passthrough_edgeflags.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_patch_vertices.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_phis_to_scalar.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_regs_to_ssa.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_returns.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_scratch.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_subgroups.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_system_values.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_tex.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_to_source_mods.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_two_sided_color.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_uniforms_to_ubo.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_vars_to_ssa.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_var_copies.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_vec_to_movs.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_viewport_transform.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_wpos_center.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_lower_wpos_ytransform.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_metadata.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_move_load_const.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_move_vec_src_uses_to_dest.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_normalize_cubemap_coords.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opcodes.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_algebraic.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4146</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4146</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_combine_stores.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_comparison_pre.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_conditional_discard.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_constant_folding.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_copy_propagate.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_copy_prop_vars.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_cse.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_dce.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_dead_cf.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_dead_write_vars.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_find_array_copies.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_gcm.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_idiv_const.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_if.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4703</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_intrinsics.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_large_constants.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_loop_unroll.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_move_comparisons.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_move_load_ubo.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_peephole_select.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_rematerialize_compares.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_remove_phis.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_shrink_load.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_trivial_continues.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_undef.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_opt_vectorize.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_phi_builder.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_print.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_propagate_invariant.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_remove_dead_variables.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_repair_ssa.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_search.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_serialize.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_split_per_member_structs.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_split_vars.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_split_var_copies.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_strip.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_sweep.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_to_lcssa.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_validate.c" />
+    <ClCompile Include="..\..\..\src\compiler\nir\nir_worklist.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\gl_spirv.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\spirv2nir.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\spirv\spirv_info.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\spirv_to_nir.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_alu.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_amd.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_cfg.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_gather_types.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_glsl450.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_opencl.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_subgroup.c" />
+    <ClCompile Include="..\..\..\src\compiler\spirv\vtn_variables.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\compiler\nir\nir.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_builder.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_builder_opcodes.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_builtin_builder.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_constant_expressions.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_control_flow.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_control_flow_private.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_deref.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_format_convert.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_instr_set.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_intrinsics.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_loop_analyze.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_opcodes.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_phi_builder.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_search.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_search_helpers.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_serialize.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_vla.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_worklist.h" />
+    <ClInclude Include="..\..\..\src\compiler\nir\nir_xfb_info.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\GLSL.ext.AMD.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\GLSL.std.450.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\nir_spirv.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\OpenCL.std.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\spirv.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\spirv_info.h" />
+    <ClInclude Include="..\..\..\src\compiler\spirv\vtn_private.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\compiler\nir\nir_algebraic.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\compiler\nir\meson.build">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_builder_opcodes_h.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_builder_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_builder_opcodes.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_builder_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_builder_opcodes.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_builder_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_builder_opcodes.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_builder_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_builder_opcodes.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_constant_expressions.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\compiler\nir\nir_intrinsics.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_intrinsics_c.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_intrinsics_h.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) --outdir .
+python %(Filename)%(Extension) --outdir .
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.py</AdditionalInputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\compiler\nir\nir_opcodes.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_opcodes_c.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.c
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.c
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.c
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_opcodes.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_opcodes.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_opcodes.c</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_opcodes.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_opcodes_h.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_opcodes.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_opcodes.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_opcodes.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; nir_opcodes.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_opcodes.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_intrinsics.py;%(RelativeDir)nir_opcodess.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\nir\nir_opt_algebraic.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)nir_algebraic.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)nir_algebraic.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)nir_algebraic.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension)
+python %(Filename)%(Extension) &gt; %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)nir_algebraic.py</AdditionalInputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\compiler\nir\README" />
+    <None Include="..\..\..\src\compiler\spirv\meson.build">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\compiler\spirv\spirv.core.grammar.json" />
+    <CustomBuild Include="..\..\..\src\compiler\spirv\spirv_info_c.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)spirv_info.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)spirv_info.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)spirv_info.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+python %(Filename)%(Extension) spirv.core.grammar.json spirv_info.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)spirv_info.c</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\spirv\vtn_gather_types_c.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)vtn_gather_types.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)vtn_gather_types.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)vtn_gather_types.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+python %(Filename)%(Extension) spirv.core.grammar.json vtn_gather_types.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)vtn_gather_types.c</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{48E077FC-E5C8-468C-A436-75D43AF0D3F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libnir</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\compiler;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\compiler;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\compiler;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\compiler;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src\compiler\nir;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
