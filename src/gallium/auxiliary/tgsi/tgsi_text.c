@@ -159,7 +159,7 @@ static int str_match_format(const char **pcur)
  */
 static void eat_opt_white( const char **pcur )
 {
-   while (**pcur == ' ' || **pcur == '\t' || **pcur == '\n')
+   while (**pcur == ' ' || **pcur == '\t' || **pcur == '\n' || **pcur == '\r')
       (*pcur)++;
 }
 
