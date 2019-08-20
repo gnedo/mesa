@@ -110,7 +110,9 @@ util_asprintf(char **str, const char *fmt, ...)
    return ret;
 }
 
+#ifndef strcasecmp
 #define strcasecmp stricmp
+#endif /* ndef strcasecmp */
 #define strdup _strdup
 
 #endif

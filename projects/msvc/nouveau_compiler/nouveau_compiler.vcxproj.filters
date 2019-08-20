@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{5cb0a958-6b70-446c-bd65-ec08d35ce145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium">
+      <UniqueIdentifier>{9052bc86-954b-47b6-8979-039c9428a874}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers">
+      <UniqueIdentifier>{05230bed-04b3-4c04-b8d8-80dc59a36f60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gallium\drivers\nouveau">
+      <UniqueIdentifier>{50ac15a7-7c23-434c-bc1f-f8c6f5614d6b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\gallium\drivers\nouveau\nouveau_compiler.c">
+      <Filter>src\gallium\drivers\nouveau</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

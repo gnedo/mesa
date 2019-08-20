@@ -19,55 +19,76 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\compiler\blob.h" />
-    <ClInclude Include="..\..\..\src\compiler\builtin_type_macros.h" />
-    <ClInclude Include="..\..\..\src\compiler\glsl\ir_expression_operation.h" />
-    <ClInclude Include="..\..\..\src\compiler\glsl_types.h" />
-    <ClInclude Include="..\..\..\src\compiler\nir_types.h" />
-    <ClInclude Include="..\..\..\src\compiler\shader_enums.h" />
-    <ClInclude Include="..\..\..\src\compiler\shader_info.h" />
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\glcpp-lex.c" />
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\glcpp-parse.c" />
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\glcpp.c" />
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\pp.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\compiler\blob.c" />
-    <ClCompile Include="..\..\..\src\compiler\glsl_types.cpp" />
-    <ClCompile Include="..\..\..\src\compiler\nir_types.cpp" />
-    <ClCompile Include="..\..\..\src\compiler\shader_enums.c" />
+    <ClInclude Include="..\..\..\src\compiler\glsl\glcpp\glcpp-parse.h" />
+    <ClInclude Include="..\..\..\src\compiler\glsl\glcpp\glcpp.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="..\..\..\src\compiler\glsl\ir_expression_operation.py">
+    <CustomBuild Include="..\..\..\src\compiler\glsl\glcpp\glcpp-lex.l">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <FileType>Document</FileType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
-echo python %(Filename)%(Extension) enum
-python %(Filename)%(Extension) enum &gt; %(Filename).h
+echo win_flex -o %(Filename).c %(Filename)%(Extension)
+win_flex -o %(Filename).c %(Filename)%(Extension)
 popd</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
-echo python %(Filename)%(Extension) enum
-python %(Filename)%(Extension) enum &gt; %(Filename).h
+echo win_flex -o %(Filename).c %(Filename)%(Extension)
+win_flex -o %(Filename).c %(Filename)%(Extension)
 popd</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
-echo python %(Filename)%(Extension) enum
-python %(Filename)%(Extension) enum &gt; %(Filename).h
+echo win_flex -o %(Filename).c %(Filename)%(Extension)
+win_flex -o %(Filename).c %(Filename)%(Extension)
 popd</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
-echo python %(Filename)%(Extension) enum
-python %(Filename)%(Extension) enum &gt; %(Filename).h
+echo win_flex -o %(Filename).c %(Filename)%(Extension)
+win_flex -o %(Filename).c %(Filename)%(Extension)
 popd</Command>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c;%(Outputs)</Outputs>
     </CustomBuild>
-    <None Include="..\..\..\src\compiler\meson.build" />
+    <CustomBuild Include="..\..\..\src\compiler\glsl\glcpp\glcpp-parse.y">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c;%(RelativeDir)%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c;%(RelativeDir)%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c;%(RelativeDir)%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+win_bison -o %(Filename).c -p glcpp_parser_ --defines=%(Filename).h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c;%(RelativeDir)%(Filename).h;%(Outputs)</Outputs>
+    </CustomBuild>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{17E82899-A771-4656-A09A-87B2C162C443}</ProjectGuid>
+    <ProjectGuid>{CC71C10C-9C75-4A0F-806A-151AEBE85915}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>libcompiler</RootNamespace>
+    <RootNamespace>libglcpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,10 +136,10 @@ popd</Command>
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -127,36 +148,34 @@ popd</Command>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_USE_MATH_DEFINES;DEBUG=1;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
-      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_USE_MATH_DEFINES;DEBUG=1;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__STDC_VERSION__=199901;_USE_MATH_DEFINES;DEBUG=1;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\getopt;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mapi</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__STDC_VERSION__=199901;_USE_MATH_DEFINES;DEBUG=1;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\getopt;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mapi</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -171,12 +190,11 @@ popd</Command>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_USE_MATH_DEFINES;NDEBUG=1;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__STDC_VERSION__=199901;_USE_MATH_DEFINES;NDEBUG=1;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\getopt;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mapi</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -193,12 +211,11 @@ popd</Command>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_USE_MATH_DEFINES;NDEBUG=1;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__STDC_VERSION__=199901;_USE_MATH_DEFINES;NDEBUG=1;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\gallium\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
-      <DisableSpecificWarnings>4244</DisableSpecificWarnings>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\src\getopt;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mapi</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

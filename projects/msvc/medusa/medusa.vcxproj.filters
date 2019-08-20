@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a2dc1ca5-7c45-4a46-86cf-6ab3940640db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler">
+      <UniqueIdentifier>{26300b33-b530-4da6-bb6b-cefbca457916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler\glsl">
+      <UniqueIdentifier>{2c1de733-da6b-460a-8292-c608cc7bc7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\getopt">
+      <UniqueIdentifier>{8de169d2-ab77-45f0-a9d2-4b0a59272b85}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="medusa.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\glsl\main.cpp">
+      <Filter>src\compiler\glsl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\getopt\getopt_long.c">
+      <Filter>src\getopt</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\getopt\getopt.h">
+      <Filter>src\getopt</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

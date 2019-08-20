@@ -34,6 +34,10 @@
 
 
 #define GL_GLEXT_PROTOTYPES
+#ifdef _WIN32
+#include <Windows.h>
+#endif //_WIN32
+
 #include "GL/gl.h"
 #include "GL/glext.h"
 

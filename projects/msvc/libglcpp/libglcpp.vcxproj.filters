@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4f72e433-8422-45f8-8708-d9a6b4e2be33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler">
+      <UniqueIdentifier>{e61933bd-8bf1-4561-8a2c-8fbfc3ea308d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler\glsl">
+      <UniqueIdentifier>{be64d505-fe94-44cc-91bf-0b7e92058efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\compiler\glsl\glcpp">
+      <UniqueIdentifier>{f48b21cd-7643-41d8-9192-3e7ae2a0a1cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\glcpp.c">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\glcpp-lex.c">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\glcpp-parse.c">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\compiler\glsl\glcpp\pp.c">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\compiler\glsl\glcpp\glcpp.h">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\compiler\glsl\glcpp\glcpp-parse.h">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\compiler\glsl\glcpp\glcpp-lex.l">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\compiler\glsl\glcpp\glcpp-parse.y">
+      <Filter>src\compiler\glsl\glcpp</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
