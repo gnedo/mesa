@@ -1,0 +1,1852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\mapi\glapi\gen\api_exec.c" />
+    <ClCompile Include="..\..\..\src\mapi\glapi\gen\enums.c" />
+    <ClCompile Include="..\..\..\src\mapi\glapi\gen\marshal_generated.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\accum.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\api_arrayelt.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\api_loopback.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\arbprogram.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\arrayobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\atifragshader.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\attrib.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\barrier.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\bbox.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\blend.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\blit.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\bufferobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\buffers.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\clear.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\clip.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\colortab.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\compute.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\condrender.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\conservativeraster.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\context.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\convolve.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\copyimage.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\cpuinfo.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\debug.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\debug_output.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\depth.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\dlist.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\draw.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\drawpix.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\drawtex.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\draw_validate.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\enable.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\errors.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\es1_conversion.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\eval.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\execmem.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\extensions.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\extensions_table.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\externalobjects.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\fbobject.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\feedback.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\ffvertex_prog.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\ff_fragment_shader.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\main\fog.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\formatquery.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\formats.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\format_fallback.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\format_pack.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\format_unpack.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\format_utils.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\framebuffer.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\genmipmap.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\get.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\getstring.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\glformats.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\glspirv.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\glthread.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\hash.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\hint.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\histogram.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\image.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\imports.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\light.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\lines.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\marshal.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\matrix.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\mipmap.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\mm.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\multisample.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\objectlabel.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\objectpurge.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\pack.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\pbo.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\performance_monitor.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\performance_query.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\pipelineobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\pixel.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\pixelstore.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\pixeltransfer.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\points.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\polygon.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\program_binary.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\program_resource.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\querymatrix.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\queryobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\rastpos.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\readpix.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\remap.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\renderbuffer.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\robustness.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\samplerobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\scissor.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\shaderapi.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\shaderimage.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\shaderobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\shader_query.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\main\shared.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\spirv_extensions.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\state.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\stencil.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\syncobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_astc.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_bptc.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_cpal.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_etc.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_fxt1.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_rgtc.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_s3tc.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texenv.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texformat.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texgen.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texgetimage.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\teximage.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texparam.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texstate.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texstorage.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texstore.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\texturebindless.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\textureview.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\transformfeedback.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\uniforms.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\uniform_query.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\main\varray.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\vdpau.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\version.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\viewport.c" />
+    <ClCompile Include="..\..\..\src\mesa\main\vtxfmt.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_debug_clip.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_debug_norm.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_debug_xform.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_eval.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_matrix.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_translate.c" />
+    <ClCompile Include="..\..\..\src\mesa\math\m_vector.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\arbprogparse.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\ir_to_mesa.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\program\lex.yy.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\program.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\programopt.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\program_parse.tab.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\program_parse_extra.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_cache.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_execute.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_instruction.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_noise.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_optimize.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_opt_constant_fold.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_parameter.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_parameter_layout.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_print.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_statevars.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\prog_to_nir.c" />
+    <ClCompile Include="..\..\..\src\mesa\program\symbol_table.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atifs_to_tgsi.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_array.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_atomicbuf.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_blend.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_clip.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_constbuf.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_depth.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_framebuffer.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_image.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_msaa.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_pixeltransfer.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_rasterizer.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_sampler.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_scissor.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_shader.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_stipple.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_storagebuf.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_tess.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_texture.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_viewport.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_bitmap.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_bitmap_shader.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_blit.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_bufferobjects.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_clear.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_compute.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_condrender.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_copyimage.c">
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4703</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4703</DisableSpecificWarnings>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_drawpixels.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_drawpixels_shader.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_drawtex.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_eglimage.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_fbo.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_feedback.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_flush.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_memoryobjects.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_msaa.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_perfmon.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_program.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_queryobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_rasterpos.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_readpixels.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_semaphoreobjects.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_strings.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_syncobj.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_texture.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_texturebarrier.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_viewport.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_xformfb.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_context.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_copytex.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_debug.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_draw.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_draw_feedback.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_extensions.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_format.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_gen_mipmap.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_ir.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_nir.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_array_merge.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_private.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_temprename.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_types.cpp" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_manager.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_mesa_to_tgsi.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_nir_builtins.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_nir_lower_builtin.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_nir_lower_tex_src_plane.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_pbo.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_program.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_sampler_view.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_scissor.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_shader_cache.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_texture.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_depth_clamp.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_yuv.c" />
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_vdpau.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_context.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec_api.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec_draw.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec_eval.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_minmax_index.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_noop.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_primitive_restart.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save_api.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save_draw.c" />
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save_loopback.c" />
+    <ClCompile Include="..\..\..\src\mesa\x86\common_x86.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\git_sha1.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\accum.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\api_arrayelt.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\api_exec.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\api_loopback.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\arbprogram.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\arrayobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\atifragshader.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\attrib.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\barrier.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\bbox.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\blend.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\blit.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\bufferobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\buffers.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\clear.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\clip.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\colormac.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\colortab.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\compiler.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\compute.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\condrender.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\config.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\conservativeraster.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\context.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\convolve.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\copyimage.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\cpuinfo.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\dd.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\debug.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\debug_output.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\depth.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\dispatch.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\dlist.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\draw.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\drawpix.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\drawtex.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\draw_validate.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\enable.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\enums.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\errors.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\es1_conversion.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\eval.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\execmem.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\extensions.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\extensions_table.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\externalobjects.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\fbobject.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\feedback.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\ffvertex_prog.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\fog.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\formatquery.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\formats.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\format_info.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\format_pack.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\format_unpack.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\format_utils.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\framebuffer.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\genmipmap.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\get.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\get_hash.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\glformats.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\glheader.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\glspirv.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\glthread.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\hash.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\hint.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\histogram.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\image.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\imports.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\light.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\lines.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\macros.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\marshal.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\marshal_generated.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\matrix.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\menums.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\mipmap.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\mm.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\mtypes.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\multisample.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\objectlabel.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\objectpurge.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\pack.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\pbo.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\performance_monitor.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\performance_query.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\pipelineobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\pixel.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\pixelstore.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\pixeltransfer.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\points.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\polygon.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\program_binary.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\program_resource.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\querymatrix.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\queryobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\rastpos.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\readpix.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\remap.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\remap_helper.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\renderbuffer.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\samplerobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\scissor.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\shaderapi.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\shaderimage.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\shaderobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\shared.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\spirv_extensions.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\state.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\stencil.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\syncobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_astc.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_bptc.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_cpal.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_etc.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_etc_tmp.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_fxt1.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_rgtc.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_s3tc.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texenv.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texenvprogram.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texformat.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texgen.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texgetimage.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\teximage.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texparam.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texstate.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texstorage.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texstore.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\texturebindless.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\textureview.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\transformfeedback.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\uniforms.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\varray.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\vdpau.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\version.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\viewport.h" />
+    <ClInclude Include="..\..\..\src\mesa\main\vtxfmt.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_debug.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_debug_util.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_dotprod_tmp.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_eval.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_matrix.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_translate.h" />
+    <ClInclude Include="..\..\..\src\mesa\math\m_vector.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\arbprogparse.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\ir_to_mesa.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\program.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\programopt.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\program_parse.tab.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\program_parser.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_cache.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_execute.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_instruction.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_noise.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_optimize.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_parameter.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_parameter_layout.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_print.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_statevars.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\prog_to_nir.h" />
+    <ClInclude Include="..\..\..\src\mesa\program\symbol_table.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atifs_to_tgsi.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atom.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atom_constbuf.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atom_list.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_bitmap.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_blit.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_bufferobjects.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_clear.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_compute.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_condrender.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_copyimage.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_drawpixels.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_drawtex.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_eglimage.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_fbo.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_feedback.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_flush.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_memoryobjects.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_msaa.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_perfmon.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_program.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_queryobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_rasterpos.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_readpixels.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_semaphoreobjects.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_strings.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_syncobj.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_texture.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_texturebarrier.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_viewport.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_xformfb.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_context.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_copytex.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_debug.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_draw.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_extensions.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_format.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_gen_mipmap.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_ir.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_array_merge.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_private.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_temprename.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_types.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_gl_api.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_manager.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_mesa_to_tgsi.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_nir.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_pbo.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_program.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_sampler_view.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_scissor.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_shader_cache.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_texture.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_depth_clamp.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_yuv.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_util.h" />
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_vdpau.h" />
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo.h" />
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_attrib.h" />
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_attrib_tmp.h" />
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_exec.h" />
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_noop.h" />
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_save.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_genexec.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; api_exec.c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)api_exec.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)apiexec.py;%(RelativeDir)gl_XML.py;%(RelativeDir)glX_XML.py;%(RelativeDir)license.py;%(RelativeDir)static_data.py;%(RelativeDir)typeexpr.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; api_exec.c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)api_exec.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)apiexec.py;%(RelativeDir)gl_XML.py;%(RelativeDir)glX_XML.py;%(RelativeDir)license.py;%(RelativeDir)static_data.py;%(RelativeDir)typeexpr.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; api_exec.c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)api_exec.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)apiexec.py;%(RelativeDir)gl_XML.py;%(RelativeDir)glX_XML.py;%(RelativeDir)license.py;%(RelativeDir)static_data.py;%(RelativeDir)typeexpr.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; api_exec.c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)api_exec.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)apiexec.py;%(RelativeDir)gl_XML.py;%(RelativeDir)glX_XML.py;%(RelativeDir)license.py;%(RelativeDir)static_data.py;%(RelativeDir)typeexpr.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\bin\git_sha1_gen.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+pushd ..\src
+echo python %(FullPath) --output git_sha1.h
+python %(FullPath) --output git_sha1.h
+popd
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)..\src\git_sha1.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+pushd ..\src
+echo python %(FullPath) --output git_sha1.h
+python %(FullPath) --output git_sha1.h
+popd
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)..\src\git_sha1.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+pushd ..\src
+echo python %(FullPath) --output git_sha1.h
+python %(FullPath) --output git_sha1.h
+popd
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)..\src\git_sha1.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+pushd ..\src
+echo python %(FullPath) --output git_sha1.h
+python %(FullPath) --output git_sha1.h
+popd
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)..\src\git_sha1.h</Outputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\mapi\glapi\gen\apiexec.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\glX_XML.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_enums.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\registry\gl.xml
+python %(Filename)%(Extension) -f ..\registry\gl.xml &gt; enums.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)enums.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)..\registry\gl.xml</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\registry\gl.xml
+python %(Filename)%(Extension) -f ..\registry\gl.xml &gt; enums.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)enums.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)..\registry\gl.xml</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\registry\gl.xml
+python %(Filename)%(Extension) -f ..\registry\gl.xml &gt; enums.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)enums.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)..\registry\gl.xml</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\registry\gl.xml
+python %(Filename)%(Extension) -f ..\registry\gl.xml &gt; enums.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)enums.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)..\registry\gl.xml</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_marshal.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; marshal_generated.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)marshal_generated.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; marshal_generated.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)marshal_generated.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; marshal_generated.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)marshal_generated.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; marshal_generated.c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)marshal_generated.c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_marshal_h.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\marshal_generated.h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)..\..\..\mesa\main\marshal_generated.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\marshal_generated.h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)..\..\..\mesa\main\marshal_generated.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\marshal_generated.h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)..\..\..\mesa\main\marshal_generated.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\marshal_generated.h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)..\..\..\mesa\main\marshal_generated.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)marshal_XML.py</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_table.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table
+python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table &gt; ..\..\..\mesa\main\dispatch.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)..\..\..\mesa\main\dispatch.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table
+python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table &gt; ..\..\..\mesa\main\dispatch.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)..\..\..\mesa\main\dispatch.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table
+python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table &gt; ..\..\..\mesa\main\dispatch.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)..\..\..\mesa\main\dispatch.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table
+python %(Filename)%(Extension) -f gl_and_es_API.xml -m remap_table &gt; ..\..\..\mesa\main\dispatch.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)..\..\..\mesa\main\dispatch.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)gl_and_es_API.xml</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)gl_and_es_API.xml</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)gl_and_es_API.xml</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)gl_and_es_API.xml</AdditionalInputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\mapi\glapi\gen\gl_XML.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\license.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\marshal_XML.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\remap_helper.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\%(Filename).h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)..\..\..\mesa\main\%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\%(Filename).h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)..\..\..\mesa\main\%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\%(Filename).h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)..\..\..\mesa\main\%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f gl_and_es_API.xml
+python %(Filename)%(Extension) -f gl_and_es_API.xml &gt; ..\..\..\mesa\main\%(Filename).h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)..\..\..\mesa\main\%(Filename).h</Outputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\mapi\glapi\gen\static_data.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\typeexpr.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="..\..\..\src\mesa\main\formats.csv">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_info.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).h
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_pack.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_fallback.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv %(Filename).c
+python %(Filename)%(Extension) formats.csv %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)formats.csv;%(RelativeDir)format_parser.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv %(Filename).c
+python %(Filename)%(Extension) formats.csv %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)formats.csv;%(RelativeDir)format_parser.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv %(Filename).c
+python %(Filename)%(Extension) formats.csv %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)formats.csv;%(RelativeDir)format_parser.py</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv %(Filename).c
+python %(Filename)%(Extension) formats.csv %(Filename).c
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)formats.csv;%(RelativeDir)format_parser.py</AdditionalInputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\mesa\main\format_parser.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_unpack.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)format_parser.py;%(RelativeDir)formats.csv</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) formats.csv
+python %(Filename)%(Extension) formats.csv &gt; %(Filename).c
+popd
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).c</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\program\program_lexer.l">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo win_flex -o lex.yy.c %(Filename)%(Extension)
+win_flex -o lex.yy.c %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)lex.yy.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo win_flex -o lex.yy.c %(Filename)%(Extension)
+win_flex -o lex.yy.c %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)lex.yy.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo win_flex -o lex.yy.c %(Filename)%(Extension)
+win_flex -o lex.yy.c %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)lex.yy.c</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo win_flex -o lex.yy.c %(Filename)%(Extension)
+win_flex -o lex.yy.c %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)lex.yy.c</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\program\program_parse.y">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).tab.c;%(RelativeDir)%(Filename).tab.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).tab.c;%(RelativeDir)%(Filename).tab.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)%(Filename).tab.c;%(RelativeDir)%(Filename).tab.h</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+win_bison -o %(Filename).tab.c --defines=%(Filename).tab.h %(Filename)%(Extension)
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)%(Filename).tab.c;%(RelativeDir)%(Filename).tab.h</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\get_hash_generator.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml
+python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml &gt; get_hash.h
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml
+python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml &gt; get_hash.h
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml
+python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml &gt; get_hash.h
+popd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pushd %(RelativeDir)
+echo python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml
+python %(Filename)%(Extension) -f ..\..\mapi\glapi\gen\gl_and_es_API.xml &gt; get_hash.h
+popd</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)get_hash.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)get_hash.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)get_hash.h</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)get_hash.h</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)get_hash_params.py;%(RelativeDir)..\..\mapi\glapi\gen\gl_and_es_API.xml</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)get_hash_params.py;%(RelativeDir)..\..\mapi\glapi\gen\gl_and_es_API.xml</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(RelativeDir)get_hash_params.py;%(RelativeDir)..\..\mapi\glapi\gen\gl_and_es_API.xml</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(RelativeDir)get_hash_params.py;%(RelativeDir)..\..\mapi\glapi\gen\gl_and_es_API.xml</AdditionalInputs>
+    </CustomBuild>
+    <None Include="..\..\..\src\mesa\main\get_hash_params.py">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_depth_clamp_separate.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_draw_buffers_blend.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_gpu_shader_int64.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_performance_monitor.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\APPLE_object_purgeable.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\APPLE_vertex_array_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_base_instance.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_bindless_texture.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_blend_func_extended.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_clear_buffer_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_clear_texture.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_clip_control.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_color_buffer_float.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_compressed_texture_pixel_storage.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_compute_shader.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_compute_variable_group_size.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_copy_buffer.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_copy_image.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_debug_output.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_depth_buffer_float.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_depth_clamp.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_direct_state_access.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_buffers.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_buffers_blend.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_elements_base_vertex.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_indirect.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_instanced.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_ES2_compatibility.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_ES3_compatibility.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_framebuffer_no_attachments.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_framebuffer_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_get_program_binary.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_get_texture_sub_image.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gl_spirv.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gpu_shader5.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gpu_shader_fp64.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gpu_shader_int64.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_indirect_parameters.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_instanced_arrays.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_internalformat_query.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_internalformat_query2.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_invalidate_subdata.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_map_buffer_range.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_multi_bind.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_pipeline_statistics_query.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_program_interface_query.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_robustness.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sampler_objects.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sample_shading.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_seamless_cube_map.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_separate_shader_objects.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_atomic_counters.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_image_load_store.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_storage_buffer_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_subroutine.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sparse_buffer.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_spirv_extensions.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sync.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_tessellation_shader.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_barrier.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_buffer_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_buffer_range.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_compression_rgtc.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_cube_map_array.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_float.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_gather.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_multisample.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_rg.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_rgb10_a2ui.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_storage.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_storage_multisample.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_view.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_uniform_buffer_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_array_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_attrib_64bit.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_attrib_binding.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_type_2_10_10_10_rev.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_viewport_array.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\es_EXT.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_direct_state_access.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_draw_buffers2.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_external_objects.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_external_objects_fd.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_framebuffer_object.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_gpu_shader4.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_multisampled_render_to_texture.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_packed_depth_stencil.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_provoking_vertex.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_separate_shader_objects.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_texture_array.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_texture_integer.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_transform_feedback.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_vertex_attrib_64bit.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_window_rectangles.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\GL3x.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\GL4x.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\gl_and_es_API.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\gl_and_glX_API.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\gl_API.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\GREMEDY_string_marker.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\INTEL_performance_query.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_context_flush_control.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_debug.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_robustness.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_robustness_es.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_texture_compression_astc.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_conditional_render.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_primitive_restart.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_texture_barrier.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_vdpau_interop.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_EGL_image.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_fixed_point.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_single_precision.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_texture_compression_astc.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\registry\gl.xml">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </Xml>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{7A2FDA01-EED0-46AB-B69D-2DFC7A4DCD4C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libmesagallium</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PACKAGE_BUGREPORT="https://bugs.freedesktop.org/enter_bug.cgi?product=Mesa";PACKAGE_VERSION="19.2.0-devel";_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;DEBUG=1;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mapi;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\mesa\main;$(ProjectDir)..\..\..\src\gallium\auxiliary</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PACKAGE_BUGREPORT="https://bugs.freedesktop.org/enter_bug.cgi?product=Mesa";PACKAGE_VERSION="19.2.0-devel";_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;DEBUG=1;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mapi;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\mesa\main;$(ProjectDir)..\..\..\src\gallium\auxiliary</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PACKAGE_BUGREPORT="https://bugs.freedesktop.org/enter_bug.cgi?product=Mesa";PACKAGE_VERSION="19.2.0-devel";_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;NDEBUG=1;WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mapi;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\mesa\main;$(ProjectDir)..\..\..\src\gallium\auxiliary</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>PACKAGE_BUGREPORT="https://bugs.freedesktop.org/enter_bug.cgi?product=Mesa";PACKAGE_VERSION="19.2.0-devel";_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_USE_MATH_DEFINES;NDEBUG=1;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;$(ProjectDir)..\..\..\src\mesa;$(ProjectDir)..\..\..\src;$(ProjectDir)..\..\..\src\mapi;$(ProjectDir)..\..\..\src\gallium\include;$(ProjectDir)..\..\..\src\mesa\main;$(ProjectDir)..\..\..\src\gallium\auxiliary</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

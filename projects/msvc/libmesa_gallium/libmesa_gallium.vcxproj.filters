@@ -1,0 +1,1908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{53de48a6-0f86-427b-9874-ba4fd5ab7d78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa">
+      <UniqueIdentifier>{c6c2722d-1188-4948-a2dc-92d8e0c8ba5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa\main">
+      <UniqueIdentifier>{f2ed5a91-c136-4b05-ace2-3686c6f3ab04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa\vbo">
+      <UniqueIdentifier>{7813b1a8-0dca-4817-99ea-9cc53ca58ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa\program">
+      <UniqueIdentifier>{351be3a7-4666-47ee-bf3c-05acb27371f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa\math">
+      <UniqueIdentifier>{f706f4ff-d7b3-4fe1-9107-0cbda22c0431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa\x86">
+      <UniqueIdentifier>{5cdcc328-c74c-4cc9-8b25-fbe7233ca2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mesa\state_tracker">
+      <UniqueIdentifier>{1d756015-307a-42b0-a9ad-e93f516fb3a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapi">
+      <UniqueIdentifier>{b8ee9e25-288d-4d4c-af0f-67ec340536db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapi\glapi">
+      <UniqueIdentifier>{464fb016-7735-45b8-a992-417f99d7ecb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapi\glapi\gen">
+      <UniqueIdentifier>{a59d405d-5c60-47ce-81af-ac803b89d966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mapi\glapi\registry">
+      <UniqueIdentifier>{b5fcc951-72dc-4467-a636-165fea78ddf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bin">
+      <UniqueIdentifier>{29960c5b-36b8-429a-9359-6fc97e43b41a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_execute.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_instruction.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_noise.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_opt_constant_fold.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\arbprogparse.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\ir_to_mesa.cpp">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_cache.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_parameter_layout.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_print.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_statevars.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_to_nir.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\program.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_optimize.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\prog_parameter.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\program_parse_extra.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\programopt.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\symbol_table.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\accum.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\api_arrayelt.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\api_loopback.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\arbprogram.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\arrayobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\atifragshader.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\attrib.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\barrier.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\bbox.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\blend.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\blit.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\bufferobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\buffers.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\clear.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\clip.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\colortab.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\compute.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\condrender.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\drawtex.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\enable.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\errors.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\conservativeraster.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\context.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\convolve.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\copyimage.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\cpuinfo.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\debug.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\debug_output.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\depth.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\dlist.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\draw.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\draw_validate.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\drawpix.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\es1_conversion.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\ff_fragment_shader.cpp">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\ffvertex_prog.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\fog.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\eval.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\execmem.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\extensions.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\extensions_table.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\externalobjects.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\fbobject.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\feedback.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\get.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\format_utils.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\formatquery.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\formats.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\framebuffer.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\genmipmap.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\lines.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\marshal.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\matrix.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\getstring.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\glformats.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\glspirv.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\glthread.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\hash.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\hint.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\histogram.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\image.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\imports.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\light.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\mipmap.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\mm.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\multisample.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\objectlabel.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\objectpurge.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\pack.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\pbo.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\performance_monitor.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\performance_query.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\pipelineobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\pixel.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\pixelstore.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\pixeltransfer.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\points.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\polygon.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\shaderobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\program_binary.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\program_resource.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\querymatrix.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\queryobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\rastpos.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\readpix.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\remap.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\renderbuffer.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\robustness.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\samplerobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\scissor.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\shader_query.cpp">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\shaderapi.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\shaderimage.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\spirv_extensions.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\shared.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\stencil.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\syncobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\state.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_s3tc.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texenv.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_astc.cpp">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_bptc.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_cpal.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_etc.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_fxt1.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texcompress_rgtc.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texturebindless.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\textureview.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\transformfeedback.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\uniform_query.cpp">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\uniforms.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\varray.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\vdpau.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\version.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\viewport.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\vtxfmt.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texformat.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texgen.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texgetimage.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\teximage.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texobj.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texparam.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texstate.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texstorage.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\texstore.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_debug_xform.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_eval.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_matrix.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_translate.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_vector.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_debug_clip.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\math\m_debug_norm.c">
+      <Filter>src\mesa\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec_draw.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec_eval.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_minmax_index.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_noop.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_primitive_restart.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_context.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_exec_api.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save_loopback.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save_api.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\vbo\vbo_save_draw.c">
+      <Filter>src\mesa\vbo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\x86\common_x86.c">
+      <Filter>src\mesa\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_tess.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_texture.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_viewport.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atifs_to_tgsi.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_array.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_atomicbuf.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_blend.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_clip.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_constbuf.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_depth.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_framebuffer.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_image.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_msaa.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_pixeltransfer.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_rasterizer.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_sampler.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_scissor.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_shader.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_stipple.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_atom_storagebuf.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_readpixels.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_semaphoreobjects.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_strings.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_bitmap.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_bitmap_shader.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_blit.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_bufferobjects.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_clear.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_compute.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_condrender.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_copyimage.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_drawpixels.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_drawpixels_shader.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_drawtex.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_eglimage.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_fbo.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_feedback.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_flush.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_memoryobjects.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_msaa.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_perfmon.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_program.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_queryobj.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_rasterpos.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_draw_feedback.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_syncobj.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_texture.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_texturebarrier.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_viewport.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_cb_xformfb.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_context.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_copytex.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_debug.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_draw.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_nir_lower_builtin.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_nir_lower_tex_src_plane.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_pbo.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_program.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_extensions.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_format.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_gen_mipmap.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_ir.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_nir.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_array_merge.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_private.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_temprename.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_glsl_types.cpp">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_manager.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_mesa_to_tgsi.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_nir_builtins.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_texture.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_depth_clamp.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_yuv.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_vdpau.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_sampler_view.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_scissor.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\state_tracker\st_shader_cache.c">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\format_pack.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\format_unpack.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\lex.yy.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\program\program_parse.tab.c">
+      <Filter>src\mesa\program</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mapi\glapi\gen\api_exec.c">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mapi\glapi\gen\enums.c">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mesa\main\format_fallback.c">
+      <Filter>src\mesa\main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\mapi\glapi\gen\marshal_generated.c">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_execute.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_instruction.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_noise.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\arbprogparse.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\ir_to_mesa.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_cache.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_parameter.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_parameter_layout.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_print.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_statevars.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_to_nir.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\program.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\prog_optimize.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\program_parser.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\programopt.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\symbol_table.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\condrender.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\accum.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\api_arrayelt.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\api_exec.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\api_loopback.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\arbprogram.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\arrayobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\atifragshader.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\attrib.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\barrier.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\bbox.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\blend.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\blit.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\bufferobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\buffers.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\clear.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\clip.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\colormac.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\colortab.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\compiler.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\compute.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\drawpix.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\drawtex.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\enable.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\enums.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\errors.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\config.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\conservativeraster.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\context.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\convolve.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\copyimage.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\cpuinfo.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\dd.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\debug.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\debug_output.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\depth.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\dlist.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\draw.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\draw_validate.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\es1_conversion.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\ffvertex_prog.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\fog.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\eval.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\execmem.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\extensions.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\extensions_table.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\externalobjects.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\fbobject.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\feedback.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\format_pack.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\format_unpack.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\genmipmap.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\get.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\format_utils.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\formatquery.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\formats.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\framebuffer.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\light.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\lines.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\macros.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\marshal.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\matrix.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\menums.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\glformats.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\glheader.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\glspirv.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\glthread.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\hash.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\hint.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\histogram.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\image.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\imports.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\polygon.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\mipmap.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\mm.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\mtypes.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\multisample.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\objectlabel.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\objectpurge.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\pack.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\pbo.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\performance_monitor.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\performance_query.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\pipelineobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\pixel.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\pixelstore.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\pixeltransfer.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\points.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\shaderobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\program_binary.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\program_resource.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\querymatrix.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\queryobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\rastpos.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\readpix.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\remap.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\renderbuffer.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\samplerobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\scissor.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\shaderapi.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\shaderimage.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\spirv_extensions.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\shared.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\state.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\stencil.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\syncobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_rgtc.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_s3tc.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texenv.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_astc.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_bptc.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_cpal.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_etc.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_etc_tmp.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texcompress_fxt1.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texturebindless.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\textureview.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\transformfeedback.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\uniforms.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\varray.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\vdpau.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\version.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\viewport.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\vtxfmt.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texenvprogram.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texformat.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texgen.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texgetimage.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\teximage.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texobj.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texparam.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texstate.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texstorage.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\texstore.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_debug_util.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_dotprod_tmp.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_eval.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_matrix.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_translate.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_vector.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\math\m_debug.h">
+      <Filter>src\mesa\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_noop.h">
+      <Filter>src\mesa\vbo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_attrib.h">
+      <Filter>src\mesa\vbo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_attrib_tmp.h">
+      <Filter>src\mesa\vbo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_exec.h">
+      <Filter>src\mesa\vbo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo.h">
+      <Filter>src\mesa\vbo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\vbo\vbo_save.h">
+      <Filter>src\mesa\vbo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atifs_to_tgsi.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atom.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atom_constbuf.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_atom_list.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_rasterpos.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_readpixels.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_semaphoreobjects.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_strings.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_bitmap.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_blit.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_bufferobjects.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_clear.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_compute.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_condrender.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_copyimage.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_drawpixels.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_drawtex.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_eglimage.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_fbo.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_feedback.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_flush.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_memoryobjects.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_msaa.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_perfmon.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_program.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_queryobj.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_draw.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_syncobj.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_texture.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_texturebarrier.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_viewport.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_cb_xformfb.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_context.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_copytex.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_debug.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_pbo.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_program.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_extensions.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_format.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_gen_mipmap.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_gl_api.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_ir.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_array_merge.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_private.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_to_tgsi_temprename.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_glsl_types.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_manager.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_mesa_to_tgsi.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_nir.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_texture.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_depth_clamp.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_tgsi_lower_yuv.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_util.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_vdpau.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_sampler_view.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_scissor.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\state_tracker\st_shader_cache.h">
+      <Filter>src\mesa\state_tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\format_info.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\program\program_parse.tab.h">
+      <Filter>src\mesa\program</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\get_hash.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\marshal_generated.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\dispatch.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\mesa\main\remap_helper.h">
+      <Filter>src\mesa\main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\git_sha1.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\src\mesa\main\format_parser.py">
+      <Filter>src\mesa\main</Filter>
+    </None>
+    <None Include="..\..\..\src\mesa\main\formats.csv">
+      <Filter>src\mesa\main</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\glX_XML.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\license.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\static_data.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\typeexpr.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\gl_XML.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\apiexec.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+    <None Include="..\..\..\src\mesa\main\get_hash_params.py">
+      <Filter>src\mesa\main</Filter>
+    </None>
+    <None Include="..\..\..\src\mapi\glapi\gen\marshal_XML.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_info.py">
+      <Filter>src\mesa\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_pack.py">
+      <Filter>src\mesa\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_unpack.py">
+      <Filter>src\mesa\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\program\program_lexer.l">
+      <Filter>src\mesa\program</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\program\program_parse.y">
+      <Filter>src\mesa\program</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_genexec.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_enums.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\format_fallback.py">
+      <Filter>src\mesa\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mesa\main\get_hash_generator.py">
+      <Filter>src\mesa\main</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_marshal.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_marshal_h.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\gl_table.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\src\mapi\glapi\gen\remap_helper.py">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\bin\git_sha1_gen.py">
+      <Filter>bin</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\gl_and_es_API.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\gl_and_glX_API.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\gl_API.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\es_EXT.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_attrib_64bit.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_attrib_binding.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_type_2_10_10_10_rev.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_viewport_array.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_base_instance.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_bindless_texture.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_blend_func_extended.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_clear_buffer_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_clear_texture.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_clip_control.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_color_buffer_float.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_compressed_texture_pixel_storage.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_compute_shader.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_compute_variable_group_size.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_copy_buffer.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_copy_image.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_debug_output.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_depth_buffer_float.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_depth_clamp.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_direct_state_access.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_buffers.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_buffers_blend.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_elements_base_vertex.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_indirect.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_draw_instanced.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_ES2_compatibility.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_ES3_compatibility.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_framebuffer_no_attachments.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_framebuffer_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_get_program_binary.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_get_texture_sub_image.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gl_spirv.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gpu_shader_fp64.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gpu_shader_int64.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_gpu_shader5.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_indirect_parameters.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_instanced_arrays.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_internalformat_query.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_internalformat_query2.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_invalidate_subdata.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_map_buffer_range.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_multi_bind.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_pipeline_statistics_query.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_program_interface_query.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_robustness.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sample_shading.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sampler_objects.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_seamless_cube_map.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_separate_shader_objects.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_atomic_counters.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_image_load_store.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_storage_buffer_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_shader_subroutine.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sparse_buffer.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_spirv_extensions.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_sync.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_tessellation_shader.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_barrier.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_buffer_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_buffer_range.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_compression_rgtc.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_cube_map_array.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_float.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_gather.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_multisample.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_rg.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_rgb10_a2ui.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_storage.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_storage_multisample.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_texture_view.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_uniform_buffer_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\ARB_vertex_array_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_texture_array.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_texture_integer.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_transform_feedback.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_vertex_attrib_64bit.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_window_rectangles.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_depth_clamp_separate.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_draw_buffers_blend.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_gpu_shader_int64.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\AMD_performance_monitor.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\APPLE_object_purgeable.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\APPLE_vertex_array_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_direct_state_access.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_draw_buffers2.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_external_objects.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_external_objects_fd.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_framebuffer_object.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_gpu_shader4.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_multisampled_render_to_texture.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_packed_depth_stencil.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_provoking_vertex.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\EXT_separate_shader_objects.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\GREMEDY_string_marker.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\INTEL_performance_query.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_debug.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_robustness.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_robustness_es.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_texture_compression_astc.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\KHR_context_flush_control.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\GL4x.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_conditional_render.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_primitive_restart.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_texture_barrier.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\NV_vdpau_interop.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_EGL_image.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_fixed_point.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_single_precision.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\OES_texture_compression_astc.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\gen\GL3x.xml">
+      <Filter>src\mapi\glapi\gen</Filter>
+    </Xml>
+    <Xml Include="..\..\..\src\mapi\glapi\registry\gl.xml">
+      <Filter>src\mapi\glapi\registry</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
