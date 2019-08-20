@@ -102,7 +102,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -120,7 +120,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -185,6 +185,9 @@
     </ProjectReference>
     <ProjectReference Include="..\libglsl_util\libglsl_util.vcxproj">
       <Project>{21ea473a-0235-4120-8c10-c79083cc3f6b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libmesa_gallium\libmesa_gallium.vcxproj">
+      <Project>{7a2fda01-eed0-46ab-b69d-2dfc7a4dcd4c}</Project>
     </ProjectReference>
     <ProjectReference Include="..\mesa_util\mesa_util.vcxproj">
       <Project>{9eac3ee6-db89-4ec3-a5ac-53f9a4fc8d48}</Project>
