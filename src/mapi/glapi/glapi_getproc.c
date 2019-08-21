@@ -49,6 +49,11 @@
 #if !defined(DISPATCH_FUNCTION_SIZE) 
 # define NEED_FUNCTION_POINTER
 #endif
+#ifdef _WIN32
+#include "gles/gl.h"
+#include "gles3/gl32.h"
+#endif //_WIN32
+
 #include "glprocs.h"
 
 

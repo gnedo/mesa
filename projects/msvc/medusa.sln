@@ -36,6 +36,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "nouveau_compiler", "nouveau
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmesa_gallium", "libmesa_gallium\libmesa_gallium.vcxproj", "{7A2FDA01-EED0-46AB-B69D-2DFC7A4DCD4C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libglapi_static", "libglapi_static\libglapi_static.vcxproj", "{9463A5B5-9797-4EBD-8958-A5841A6A64A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -140,6 +142,14 @@ Global
 		{7A2FDA01-EED0-46AB-B69D-2DFC7A4DCD4C}.Release|x64.Build.0 = Release|x64
 		{7A2FDA01-EED0-46AB-B69D-2DFC7A4DCD4C}.Release|x86.ActiveCfg = Release|Win32
 		{7A2FDA01-EED0-46AB-B69D-2DFC7A4DCD4C}.Release|x86.Build.0 = Release|Win32
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Debug|x64.ActiveCfg = Debug|x64
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Debug|x64.Build.0 = Debug|x64
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Debug|x86.ActiveCfg = Debug|Win32
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Debug|x86.Build.0 = Debug|Win32
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Release|x64.ActiveCfg = Release|x64
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Release|x64.Build.0 = Release|x64
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Release|x86.ActiveCfg = Release|Win32
+		{9463A5B5-9797-4EBD-8958-A5841A6A64A0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

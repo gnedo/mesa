@@ -7348,7 +7348,7 @@ has_unsupported_control_flow(exec_list *ir,
 GLboolean
 st_link_tgsi(struct gl_context *ctx, struct gl_shader_program *prog)
 {
-   struct pipe_screen *pscreen = ctx->st->pipe->screen;
+   //struct pipe_screen *pscreen = ctx->st->pipe->screen;
 
    for (unsigned i = 0; i < MESA_SHADER_STAGES; i++) {
       struct gl_linked_shader *shader = prog->_LinkedShaders[i];
@@ -7361,8 +7361,8 @@ st_link_tgsi(struct gl_context *ctx, struct gl_shader_program *prog)
       const struct gl_shader_compiler_options *options =
             &ctx->Const.ShaderCompilerOptions[stage];
 
-      unsigned if_threshold = pscreen->get_shader_param(pscreen, ptarget,
-                                                        PIPE_SHADER_CAP_LOWER_IF_THRESHOLD);
+      unsigned if_threshold = 1; // pscreen->get_shader_param(pscreen, ptarget,
+                                 //                       PIPE_SHADER_CAP_LOWER_IF_THRESHOLD);
       if (ctx->Const.GLSLOptimizeConservatively) {
          /* Do it once and repeat only if there's unsupported control flow. */
          do {

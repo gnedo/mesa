@@ -36,6 +36,7 @@
 #include "util/strtod.h"
 #include "main/mtypes.h"
 
+#if 0
 void
 _mesa_warning(struct gl_context *ctx, const char *fmt, ...)
 {
@@ -177,6 +178,7 @@ _mesa_clear_shader_program_data(struct gl_context *ctx,
    shProg->data->AtomicBuffers = NULL;
    shProg->data->NumAtomicBuffers = 0;
 }
+#endif //0
 
 void initialize_context_to_defaults(struct gl_context *ctx, gl_api api)
 {

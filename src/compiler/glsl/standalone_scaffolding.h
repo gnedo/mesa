@@ -78,6 +78,7 @@ _mesa_program_state_flags(const gl_state_index16 state[STATE_LENGTH]);
 extern "C" char *
 _mesa_program_state_string(const gl_state_index16 state[STATE_LENGTH]);
 
+#if 0
 static inline gl_shader_stage
 _mesa_shader_enum_to_shader_stage(GLenum v)
 {
@@ -99,6 +100,7 @@ _mesa_shader_enum_to_shader_stage(GLenum v)
       return MESA_SHADER_VERTEX;
    }
 }
+#endif //0
 
 /**
  * Initialize the given gl_context structure to a reasonable set of

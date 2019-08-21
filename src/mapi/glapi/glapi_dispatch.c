@@ -175,6 +175,13 @@ GL_API void GL_APIENTRY glPrimitiveBoundingBox (GLfloat minX, GLfloat minY, GLfl
 #  endif
 #endif
 
+#ifdef WIN32
+#ifdef KEYWORD1
+#undef KEYWORD1
+#define KEYWORD1
+#endif /* KEYWORD1 */
+#endif /* WIN32 */
+
 #include "glapi/glapitemp.h"
 
 #endif /* USE_X86_ASM */

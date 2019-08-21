@@ -51,6 +51,9 @@
 extern "C" {
 #endif
 
+#ifndef _GLAPI_NO_EXPORTS
+#define _GLAPI_NO_EXPORTS
+#endif /* _GLAPI_NO_EXPORTS */
 
 #ifdef _GLAPI_NO_EXPORTS
 #  define _GLAPI_EXPORT

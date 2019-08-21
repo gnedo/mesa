@@ -371,3 +371,7 @@ src/mesa/main/remap_helper.h
 src/mesa/program/lex.yy.c
 src/mesa/program/program_parse.tab.c
 src/mesa/program/program_parse.tab.h
+src/mapi/glapi/glapitemp.h
+src/mapi/glapi/gen/glapi_gentable.c
+src/mapi/glapi/gen/glapitable.h
+src/mapi/glapi/gen/glprocs.h

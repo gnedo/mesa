@@ -174,6 +174,12 @@
     <ProjectReference Include="..\libcompiler\libcompiler.vcxproj">
       <Project>{17e82899-a771-4656-a09a-87b2c162c443}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\libgallium\libgallium.vcxproj">
+      <Project>{31398414-f902-4032-a95d-60822e2cbaf7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libglapi_static\libglapi_static.vcxproj">
+      <Project>{9463a5b5-9797-4ebd-8958-a5841a6a64a0}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\libglcpp\libglcpp.vcxproj">
       <Project>{cc71c10c-9c75-4a0f-806a-151aebe85915}</Project>
     </ProjectReference>
@@ -188,6 +194,9 @@
     </ProjectReference>
     <ProjectReference Include="..\libmesa_gallium\libmesa_gallium.vcxproj">
       <Project>{7a2fda01-eed0-46ab-b69d-2dfc7a4dcd4c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libnir\libnir.vcxproj">
+      <Project>{48e077fc-e5c8-468c-a436-75d43af0d3f2}</Project>
     </ProjectReference>
     <ProjectReference Include="..\mesa_util\mesa_util.vcxproj">
       <Project>{9eac3ee6-db89-4ec3-a5ac-53f9a4fc8d48}</Project>

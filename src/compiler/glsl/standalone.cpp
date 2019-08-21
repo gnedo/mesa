@@ -44,6 +44,9 @@
 #include "builtin_functions.h"
 #include "opt_add_neg_to_sub.h"
 #include "main/mtypes.h"
+#include "main/shaderobj.h"
+
+#include "state_tracker/st_glsl_to_tgsi.h"
 
 class dead_variable_visitor : public ir_hierarchical_visitor {
 public:
@@ -446,16 +449,17 @@ standalone_compile_shader(const struct standalone_options *_options,
 
    struct gl_shader_program *whole_program;
 
-   whole_program = rzalloc (NULL, struct gl_shader_program);
+   whole_program = _mesa_new_shader_program(0);
+   //whole_program = rzalloc (NULL, struct gl_shader_program);
    assert(whole_program != NULL);
-   whole_program->data = rzalloc(whole_program, struct gl_shader_program_data);
-   assert(whole_program->data != NULL);
-   whole_program->data->InfoLog = ralloc_strdup(whole_program->data, "");
+   //whole_program->data = rzalloc(whole_program, struct gl_shader_program_data);
+   //assert(whole_program->data != NULL);
+   //whole_program->data->InfoLog = ralloc_strdup(whole_program->data, "");
 
    /* Created just to avoid segmentation faults */
-   whole_program->AttributeBindings = new string_to_uint_map;
-   whole_program->FragDataBindings = new string_to_uint_map;
-   whole_program->FragDataIndexBindings = new string_to_uint_map;
+   //whole_program->AttributeBindings = new string_to_uint_map;
+   //whole_program->FragDataBindings = new string_to_uint_map;
+   //whole_program->FragDataIndexBindings = new string_to_uint_map;
 
    for (unsigned i = 0; i < num_files; i++) {
       whole_program->Shaders =
@@ -463,32 +467,33 @@ standalone_compile_shader(const struct standalone_options *_options,
                   struct gl_shader *, whole_program->NumShaders + 1);
       assert(whole_program->Shaders != NULL);
 
-      struct gl_shader *shader = rzalloc(whole_program, gl_shader);
-
-      whole_program->Shaders[whole_program->NumShaders] = shader;
-      whole_program->NumShaders++;
-
       const unsigned len = strlen(files[i]);
       if (len < 6)
          goto fail;
 
-      const char *const ext = & files[i][len - 5];
+      GLenum type {};
+      const char *const ext = &files[i][len - 5];
       /* TODO add support to read a .shader_test */
       if (strncmp(".vert", ext, 5) == 0 || strncmp(".glsl", ext, 5) == 0)
-	 shader->Type = GL_VERTEX_SHADER;
+         type = GL_VERTEX_SHADER;
       else if (strncmp(".tesc", ext, 5) == 0)
-	 shader->Type = GL_TESS_CONTROL_SHADER;
+         type = GL_TESS_CONTROL_SHADER;
       else if (strncmp(".tese", ext, 5) == 0)
-	 shader->Type = GL_TESS_EVALUATION_SHADER;
+         type = GL_TESS_EVALUATION_SHADER;
       else if (strncmp(".geom", ext, 5) == 0)
-	 shader->Type = GL_GEOMETRY_SHADER;
+         type = GL_GEOMETRY_SHADER;
       else if (strncmp(".frag", ext, 5) == 0)
-	 shader->Type = GL_FRAGMENT_SHADER;
+         type = GL_FRAGMENT_SHADER;
       else if (strncmp(".comp", ext, 5) == 0)
-         shader->Type = GL_COMPUTE_SHADER;
+         type = GL_COMPUTE_SHADER;
       else
          goto fail;
-      shader->Stage = _mesa_shader_enum_to_shader_stage(shader->Type);
+
+      struct gl_shader *shader = _mesa_new_shader(0, _mesa_shader_enum_to_shader_stage(type)); //rzalloc(whole_program, gl_shader);
+      shader->Type = type;
+
+      whole_program->Shaders[whole_program->NumShaders] = shader;
+      whole_program->NumShaders++;
 
       shader->Source = load_text_file(whole_program, files[i]);
       if (shader->Source == NULL) {
@@ -514,10 +519,10 @@ standalone_compile_shader(const struct standalone_options *_options,
    }
 
    if (status == EXIT_SUCCESS) {
-      _mesa_clear_shader_program_data(ctx, whole_program);
 
       if (options->do_link)  {
          link_shaders(ctx, whole_program);
+         st_link_tgsi(ctx, whole_program);
       } else {
          const gl_shader_stage stage = whole_program->Shaders[0]->Stage;
 
@@ -592,6 +597,8 @@ standalone_compile_shader(const struct standalone_options *_options,
          }
       }
    }
+
+   _mesa_clear_shader_program_data(ctx, whole_program);
 
    return whole_program;
 
